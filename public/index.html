@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LifeChain – Blood Bank Traceability</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="logo-mark">🩸</div>
+        <div><b>LifeChain</b><small>Blood Bank Blockchain</small></div>
+      </div>
+      <div class="identity">
+        <label for="org-select">Signed in as (MSP identity)</label>
+        <select id="org-select"></select>
+      </div>
+      <nav class="nav">
+        <a href="#/dashboard" data-route="dashboard"><span class="ico">▦</span>Dashboard</a>
+        <a href="#/collect" data-route="collect"><span class="ico">＋</span>Collect Donation</a>
+        <a href="#/testing" data-route="testing"><span class="ico">⚗</span>Lab Testing</a>
+        <a href="#/distribution" data-route="distribution"><span class="ico">⇄</span>Distribution</a>
+        <a href="#/hospital" data-route="hospital"><span class="ico">✚</span>Hospital</a>
+        <a href="#/inventory" data-route="inventory"><span class="ico">☰</span>Inventory</a>
+        <a href="#/trace" data-route="trace"><span class="ico">⌕</span>Trace Unit</a>
+        <a href="#/explorer" data-route="explorer"><span class="ico">⛓</span>Block Explorer</a>
+        <a href="#/network" data-route="network"><span class="ico">◎</span>Network</a>
+        <a href="#/security" data-route="security"><span class="ico">⚠</span>Security Tests</a>
+      </nav>
+      <div class="side-foot" id="side-status"><span class="dot"></span>Peer online</div>
+    </aside>
+    <main id="view"></main>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>

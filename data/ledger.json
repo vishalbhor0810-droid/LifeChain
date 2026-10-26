@@ -1,0 +1,3267 @@
+[
+  {
+    "header": {
+      "number": 0,
+      "previousHash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "dataHash": "8d887c035a0fc8edc08e11dbf3d60066fbea7fd6201c3241bb96266cb23ab3f0"
+    },
+    "hash": "9df8b838dde39eba9bc8d71900eb7a8c0f6e88401fd4f10c17c4cd14eb3f16ee",
+    "data": [
+      {
+        "txId": "36216d657aad0d3589841d90700228c6ca33dff6c82c6af0ab371f00abcf3fe7",
+        "type": "CONFIG",
+        "channel": "bloodchannel",
+        "timestamp": 1792938628109,
+        "config": {
+          "organizations": [
+            "BloodBankMSP",
+            "LabMSP",
+            "CityCareMSP",
+            "GreenValleyMSP",
+            "RegulatorMSP"
+          ],
+          "orderer": "orderer.lifechain.com",
+          "chaincode": "bloodtrace",
+          "endorsementPolicy": "AND('<CreatorOrg>.peer', 'RegulatorMSP.peer')"
+        },
+        "validationCode": "VALID"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938628109,
+      "txCount": 1,
+      "validationCodes": [
+        "VALID"
+      ]
+    }
+  },
+  {
+    "header": {
+      "number": 1,
+      "previousHash": "9df8b838dde39eba9bc8d71900eb7a8c0f6e88401fd4f10c17c4cd14eb3f16ee",
+      "dataHash": "976a5bcc50744bf173518447ee8dc7f765810a0e537829b53d73bf3a03e3ef5a"
+    },
+    "hash": "66cd221ff13f1689a9cecd18c72756d795c29ba84d0e86cae0f1635e5fb5fc50",
+    "data": [
+      {
+        "txId": "c1efe5ad30dd1e12b3e16c0ed0bab62603ea24ca5904cfbc368bc85cf27e775d",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "CollectBlood",
+          "args": {
+            "unitId": "BU-2026-0101",
+            "donorId": "DNR-48213",
+            "bloodGroup": "O+",
+            "component": "Whole Blood",
+            "volumeMl": 450
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1791901828110,
+          "nonce": "6525ee33f14c0f92",
+          "txId": "c1efe5ad30dd1e12b3e16c0ed0bab62603ea24ca5904cfbc368bc85cf27e775d"
+        },
+        "proposalSignature": "304502204af3feaf2cf16fee555864b6ca11bd49f18a541e318994dd6fd814e460531c2b022100ffd724e2cfc8d133f0d6c8e37d2d3fa390d5fef1c58f5c3655a276c42ccf86fa",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0101": null
+          },
+          "writes": {
+            "UNIT_BU-2026-0101": {
+              "unitId": "BU-2026-0101",
+              "donorRef": "REF-916FE2BA723A",
+              "bloodGroup": "O+",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1791901828110,
+              "expiryDate": 1794925828110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "COLLECTED",
+              "custodian": "BloodBankOrg",
+              "testResult": null,
+              "lastAction": "COLLECTED",
+              "lastUpdated": 1791901828110,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "450 ml Whole Blood collected at LifeLine Blood Bank"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0101",
+          "donorRef": "REF-916FE2BA723A",
+          "expiryDate": 1794925828110
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "3045022100f6efffcd5a65be3f39754608548f25d0303dc86e19237aa45d4946f2fb89130002200a1e9ed4130ada7a225ab15e2d94a36e125b20fdce988d6616f33d5790570f06"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3045022100d1d7143945f87c4054b0ce086439217c059f2d5fcffc5700f5fe977c0c417ee902205b7a45dfc757db8a6bb41a7c50eff61229f8ab272c7ad012d8062a2bb39c773d"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "15ff3ff144c8e3b680d35209a6882fa4e507155ed3a89a6c0885c03c16a26a36",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "CollectBlood",
+          "args": {
+            "unitId": "BU-2026-0102",
+            "donorId": "DNR-48214",
+            "bloodGroup": "A+",
+            "component": "Packed RBC",
+            "volumeMl": 300
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1791988228110,
+          "nonce": "1cdb67b8d864e6ad",
+          "txId": "15ff3ff144c8e3b680d35209a6882fa4e507155ed3a89a6c0885c03c16a26a36"
+        },
+        "proposalSignature": "3045022100cb660cfea82ad7a74d6b7afbfd3d39124877519112469d9585da2c7974763c2102206b55efbd492d6350ac8efb14372d4d3aa7612f259e1cd47cd95c6467e225ab88",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0102": null
+          },
+          "writes": {
+            "UNIT_BU-2026-0102": {
+              "unitId": "BU-2026-0102",
+              "donorRef": "REF-CBC84B4F0F7E",
+              "bloodGroup": "A+",
+              "component": "Packed RBC",
+              "volumeMl": 300,
+              "collectedAt": 1791988228110,
+              "expiryDate": 1795617028110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "COLLECTED",
+              "custodian": "BloodBankOrg",
+              "testResult": null,
+              "lastAction": "COLLECTED",
+              "lastUpdated": 1791988228110,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "300 ml Packed RBC collected at LifeLine Blood Bank"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0102",
+          "donorRef": "REF-CBC84B4F0F7E",
+          "expiryDate": 1795617028110
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "304502210089e543853aa2f435522f26dac9a94a7d10ffd187b3bab9a1ff0e8cbca5311394022023d2b09de6ab4694ca7e7da3efe73558f3e1aca24f941d9285b37185d87e2d3c"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3045022100c965e21fd235fa3ee91c9a3afbf61bdc4f1b25ca0bb0a6c35a9cb07833cdc3fc02201935fa78155fbac6124e70093f1a0fe84bce8df6ff90c83a821b5ac10a55394c"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "02fead54d2ddee7e60ee818c0ac20c54efa03870b18e96e7582d2f02a87c91fb",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "CollectBlood",
+          "args": {
+            "unitId": "BU-2026-0103",
+            "donorId": "DNR-48220",
+            "bloodGroup": "B+",
+            "component": "Whole Blood",
+            "volumeMl": 450
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792074628110,
+          "nonce": "b99bca2fd3c16882",
+          "txId": "02fead54d2ddee7e60ee818c0ac20c54efa03870b18e96e7582d2f02a87c91fb"
+        },
+        "proposalSignature": "30450220787413fb27165e36d93d016212123f02bd595a766e86f4e8929a94a462860aa5022100e74907db7650cebe06ee5a3cd42c4a0c775c72f7c70c166ccc93ff872df912ed",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0103": null
+          },
+          "writes": {
+            "UNIT_BU-2026-0103": {
+              "unitId": "BU-2026-0103",
+              "donorRef": "REF-2D02E8A23590",
+              "bloodGroup": "B+",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1792074628110,
+              "expiryDate": 1795098628110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "COLLECTED",
+              "custodian": "BloodBankOrg",
+              "testResult": null,
+              "lastAction": "COLLECTED",
+              "lastUpdated": 1792074628110,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "450 ml Whole Blood collected at LifeLine Blood Bank"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0103",
+          "donorRef": "REF-2D02E8A23590",
+          "expiryDate": 1795098628110
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "304502203b74ff1586683823d468d3094539bffc3a31347b97b8147798f843bacbba46520221009d62d363c5a3fd2ffdb0042c514044fe4c45d5879e13ac4a93a1dfa108803dd9"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "304602210085984c0c5df789fef86bb467d0bcbbdd2a0448fcbd14fd36165178efe21e58c3022100fa6e5ef716f138f78a621d9aee940653c0dbba76e217193156f83d5250832a8e"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "453082afc3e84d3f402ec6f6faa6a907436ab477eb5319c39c740b4b1f8e3cbd",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "CollectBlood",
+          "args": {
+            "unitId": "BU-2026-0104",
+            "donorId": "DNR-48231",
+            "bloodGroup": "O-",
+            "component": "Packed RBC",
+            "volumeMl": 300
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792161028110,
+          "nonce": "cebaef39f30bc3a6",
+          "txId": "453082afc3e84d3f402ec6f6faa6a907436ab477eb5319c39c740b4b1f8e3cbd"
+        },
+        "proposalSignature": "30450220157a1f3dac7ba62480e8def7cae4ae7908bcc2b0dad6fec678ab650d85b4b5fb0221009df7a1e4dab70878a0c7807c5b8d7a06938e6a94b2ee9fca2d7cdff7fd16d3ae",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0104": null
+          },
+          "writes": {
+            "UNIT_BU-2026-0104": {
+              "unitId": "BU-2026-0104",
+              "donorRef": "REF-197FF1A5B2E8",
+              "bloodGroup": "O-",
+              "component": "Packed RBC",
+              "volumeMl": 300,
+              "collectedAt": 1792161028110,
+              "expiryDate": 1795789828110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "COLLECTED",
+              "custodian": "BloodBankOrg",
+              "testResult": null,
+              "lastAction": "COLLECTED",
+              "lastUpdated": 1792161028110,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "300 ml Packed RBC collected at LifeLine Blood Bank"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0104",
+          "donorRef": "REF-197FF1A5B2E8",
+          "expiryDate": 1795789828110
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "3045022100e2686b410d32229242e557bb1d94d3f5a3fbc8db6d3f5e782b70d5e0ec78fbae02205847e1223c2607d6d99cbb3d77a1254dbc4257f28ac549e11a8ec95b81f6ac2f"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3045022100b13564351635a9b5e35c71e3f2fd8079a7f7517798793a1bf4af2804182e0246022027f3f6aa21d0bc205a444f3786a4e42eacde2085e6fae57f9d8a0c4e9e4eb63b"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "7590f7fe2bb6f199119ec3a7c6f1abdbd13becee8b6abc083ace6106a925d936",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "CollectBlood",
+          "args": {
+            "unitId": "BU-2026-0105",
+            "donorId": "DNR-48233",
+            "bloodGroup": "AB+",
+            "component": "Plasma",
+            "volumeMl": 200
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792247428110,
+          "nonce": "91329aba9d74ad59",
+          "txId": "7590f7fe2bb6f199119ec3a7c6f1abdbd13becee8b6abc083ace6106a925d936"
+        },
+        "proposalSignature": "3045022100db3e1caf5f1fcea5dcbd6962bb6b8d4e433c483af38d09e74360344ada52ab26022058858050b1c0a169b37713cd53aced9a99dd67ad7c0e7ecae08df4887cc8ebb0",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0105": null
+          },
+          "writes": {
+            "UNIT_BU-2026-0105": {
+              "unitId": "BU-2026-0105",
+              "donorRef": "REF-5B1C31D44E44",
+              "bloodGroup": "AB+",
+              "component": "Plasma",
+              "volumeMl": 200,
+              "collectedAt": 1792247428110,
+              "expiryDate": 1823783428110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "COLLECTED",
+              "custodian": "BloodBankOrg",
+              "testResult": null,
+              "lastAction": "COLLECTED",
+              "lastUpdated": 1792247428110,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "200 ml Plasma collected at LifeLine Blood Bank"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0105",
+          "donorRef": "REF-5B1C31D44E44",
+          "expiryDate": 1823783428110
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "3045022022402e4e71594f0eadb045377956d588b849c442749c064c36af8a327d2d4a2e022100e3ff394574c15df071c1cd67babcc815e5ca503eea678560f7868cb88530dd14"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "30450220795723f26160f202eda477556159190c20ea7ee11b1efde36a75ceb3461787cd0221009511552cf204899339649a8d0daa079af0dd8b0dfc9c942b2e7db631af71a63e"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "de93a614f8c9695a201769a84bd4b1f615acc883e486f3f58e1bdb26e5582514",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "CollectBlood",
+          "args": {
+            "unitId": "BU-2026-0106",
+            "donorId": "DNR-48240",
+            "bloodGroup": "A-",
+            "component": "Whole Blood",
+            "volumeMl": 450
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792333828110,
+          "nonce": "534a994699bda2b4",
+          "txId": "de93a614f8c9695a201769a84bd4b1f615acc883e486f3f58e1bdb26e5582514"
+        },
+        "proposalSignature": "3045022100c56ef948d8d5aca83a79d580ae210090bc91fbe5111012e79ee9fb1799cb3fef022079dad79e80030e8ef2986fb4b060e59727ee96706212e70598b1ae001585eed8",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0106": null
+          },
+          "writes": {
+            "UNIT_BU-2026-0106": {
+              "unitId": "BU-2026-0106",
+              "donorRef": "REF-5A1ECBF9D9B8",
+              "bloodGroup": "A-",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1792333828110,
+              "expiryDate": 1795357828110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "COLLECTED",
+              "custodian": "BloodBankOrg",
+              "testResult": null,
+              "lastAction": "COLLECTED",
+              "lastUpdated": 1792333828110,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "450 ml Whole Blood collected at LifeLine Blood Bank"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0106",
+          "donorRef": "REF-5A1ECBF9D9B8",
+          "expiryDate": 1795357828110
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "304502205fece0d0e9d9fe344b814c34b0ab2b389ab663ced6a08dcd2360ea1c4a7354630221009a2f4f0616ac1ae8a1cee1b7b81f5b5b335ceafbb5a53f0a91420d9fab95bb34"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3044022064add2fcad23a994b59f47e185a00c4bdd6619086df667f0ee46b92234d7668502206c7f20e1d5051c714e8c01dd7a8f44ca4c70872f615cd9d434e013e5a40864d4"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "7c260839497ba0c8dac7ee28c5cee24836682cc561660ee69f5bb7a67e18a5d1",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "CollectBlood",
+          "args": {
+            "unitId": "BU-2026-0107",
+            "donorId": "DNR-48244",
+            "bloodGroup": "B-",
+            "component": "Packed RBC",
+            "volumeMl": 300
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792420228110,
+          "nonce": "a201a61b9f897c47",
+          "txId": "7c260839497ba0c8dac7ee28c5cee24836682cc561660ee69f5bb7a67e18a5d1"
+        },
+        "proposalSignature": "3045022100e399a4cbe609a07cd6642df904987226355acace969c75eba80ffb867c13a3620220503bcb7e0484729f8bd2acabfcb1b66b3b670778f2c130fdc23c8348dcd32504",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0107": null
+          },
+          "writes": {
+            "UNIT_BU-2026-0107": {
+              "unitId": "BU-2026-0107",
+              "donorRef": "REF-60F3A59E4C05",
+              "bloodGroup": "B-",
+              "component": "Packed RBC",
+              "volumeMl": 300,
+              "collectedAt": 1792420228110,
+              "expiryDate": 1796049028110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "COLLECTED",
+              "custodian": "BloodBankOrg",
+              "testResult": null,
+              "lastAction": "COLLECTED",
+              "lastUpdated": 1792420228110,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "300 ml Packed RBC collected at LifeLine Blood Bank"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0107",
+          "donorRef": "REF-60F3A59E4C05",
+          "expiryDate": 1796049028110
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "3045022100f1fb03536911ea89aee3157b851bd7dfb0393473c89c0f81e0fa073d2ee061d4022047f736544ecaab777600df03af66ff7290d99edbb55231f04e786cf613844baa"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3045022100e87ea9956d96b9fba960c18174ec4817ba140cbb9681b99a77adf99a3d7b4bb70220399ca4fa0903e0cb80e0cc240ec978353a213a3c41b0ea3e372068f5659dca8d"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "52787c927dd5f59f30ec93dd318e72260e16b236c2b4c14b8e1fec74491896a3",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "CollectBlood",
+          "args": {
+            "unitId": "BU-2026-0108",
+            "donorId": "DNR-48250",
+            "bloodGroup": "O+",
+            "component": "Platelets",
+            "volumeMl": 60
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792593028110,
+          "nonce": "f36c69ed1abd492d",
+          "txId": "52787c927dd5f59f30ec93dd318e72260e16b236c2b4c14b8e1fec74491896a3"
+        },
+        "proposalSignature": "3045022000dafcaf788e50fe8e40561792f53e03aa9abb9c5ee641967f05baf3efb7f806022100f0e69b755f005d9cd247130aead839a008d8049f18ec9a2c3968be7d45f5e835",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0108": null
+          },
+          "writes": {
+            "UNIT_BU-2026-0108": {
+              "unitId": "BU-2026-0108",
+              "donorRef": "REF-DF97C783ABDD",
+              "bloodGroup": "O+",
+              "component": "Platelets",
+              "volumeMl": 60,
+              "collectedAt": 1792593028110,
+              "expiryDate": 1793025028110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "COLLECTED",
+              "custodian": "BloodBankOrg",
+              "testResult": null,
+              "lastAction": "COLLECTED",
+              "lastUpdated": 1792593028110,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "60 ml Platelets collected at LifeLine Blood Bank"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0108",
+          "donorRef": "REF-DF97C783ABDD",
+          "expiryDate": 1793025028110
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "3046022100d68f862d2f1fc47a1c272e109b80dc75e795b319cb3d49b7caff8e4afba2192d0221008b088d6c7c79573b2f9fdb838e1485bdd3f6a9bd0b805dc883fd97122639a094"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3045022100eae2211a7a3c98bbfa5e673301be07f70a4ecf0c8a1648807167bb72c3e7a8ba022018d84b066eeb4a12d521e0bcf03ed8ca9f9fe675e1dd9d2eb3163a9263898e26"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "44568ff135f6b8664994054cccc608a92b28774a528eb39676ebb1de18bde076",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "CollectBlood",
+          "args": {
+            "unitId": "BU-2026-0109",
+            "donorId": "DNR-48252",
+            "bloodGroup": "A+",
+            "component": "Whole Blood",
+            "volumeMl": 450
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792679428110,
+          "nonce": "6eeeba157c66cd42",
+          "txId": "44568ff135f6b8664994054cccc608a92b28774a528eb39676ebb1de18bde076"
+        },
+        "proposalSignature": "30450220053914198fb0d782d9226c0bd860eb98138ab0e28ccb30e9ddc795444f4fb526022100d9135c0a2602dc667f013c77a53fc289f973d6776304f2ac52bb89f1297792b7",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0109": null
+          },
+          "writes": {
+            "UNIT_BU-2026-0109": {
+              "unitId": "BU-2026-0109",
+              "donorRef": "REF-47D4848AC279",
+              "bloodGroup": "A+",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1792679428110,
+              "expiryDate": 1795703428110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "COLLECTED",
+              "custodian": "BloodBankOrg",
+              "testResult": null,
+              "lastAction": "COLLECTED",
+              "lastUpdated": 1792679428110,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "450 ml Whole Blood collected at LifeLine Blood Bank"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0109",
+          "donorRef": "REF-47D4848AC279",
+          "expiryDate": 1795703428110
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "3045022100cdb7aff1d0c516dec10d559d181fd48e6d8380b796d2f201da8a8d6b6b65c42a02205f24b9d0f0d54160964db0b11a23318b2b805c562b0193345a3ab1e7106ad761"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3045022100f2067c0c29e25f87180fe8162c66f6cd6d0f94448f86b38dad865eedfec1c33e02200f0210faa69f741304cf7dc8e7baffe588519cc4a274358a13c7f959b8c1e8fe"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "69fb718f3ae8a517948ab83f6ab02f63aae1043fd076fec1c1d0e6a7b7747775",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "CollectBlood",
+          "args": {
+            "unitId": "BU-2026-0110",
+            "donorId": "DNR-48261",
+            "bloodGroup": "B+",
+            "component": "Packed RBC",
+            "volumeMl": 300
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792765828110,
+          "nonce": "9be67db57869b751",
+          "txId": "69fb718f3ae8a517948ab83f6ab02f63aae1043fd076fec1c1d0e6a7b7747775"
+        },
+        "proposalSignature": "3046022100b2c997463f70bfbc492dd3cd4af7bd2b555eb14ef7c93bcaa65d56af8749eac7022100b9a4cce197f04431f03c23c855c9df02af5f71c473dc1d386d59b8214d89ea5c",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0110": null
+          },
+          "writes": {
+            "UNIT_BU-2026-0110": {
+              "unitId": "BU-2026-0110",
+              "donorRef": "REF-64680A611E06",
+              "bloodGroup": "B+",
+              "component": "Packed RBC",
+              "volumeMl": 300,
+              "collectedAt": 1792765828110,
+              "expiryDate": 1796394628110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "COLLECTED",
+              "custodian": "BloodBankOrg",
+              "testResult": null,
+              "lastAction": "COLLECTED",
+              "lastUpdated": 1792765828110,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "300 ml Packed RBC collected at LifeLine Blood Bank"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0110",
+          "donorRef": "REF-64680A611E06",
+          "expiryDate": 1796394628110
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "3046022100ff3c66b6477f896e49a6f87135e5f7f72584c910cb1487a7a88a06b678b6e869022100b3af6cfdfb58ab9c6cd50fb2e6c54ee390858ec74d5aecee317fd714850ce291"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "304502206d4bda2421f4518602e10e3117c248dbeb44b20b2e64337b226afb4ebe7597e1022100d2bfa24cc42d4a56555eb7e10538ce1da45a7d1c58c963ebc7b5142f1675eb3f"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "43a6085905e94893fc32953beb314a2730ca33513f913c65c649550785c877b2",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "CollectBlood",
+          "args": {
+            "unitId": "BU-2026-0111",
+            "donorId": "DNR-48263",
+            "bloodGroup": "O+",
+            "component": "Packed RBC",
+            "volumeMl": 300
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792852228110,
+          "nonce": "477f387c20e63289",
+          "txId": "43a6085905e94893fc32953beb314a2730ca33513f913c65c649550785c877b2"
+        },
+        "proposalSignature": "3045022100ad49ddddb93785bb1f3266ca1555722d38f281aa046afa6c47097d04a1d5ec9502206fd41e8100358489e3ee73b6261b90d41cc6fa9eceb2c80f90396a4fc5ff9250",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0111": null
+          },
+          "writes": {
+            "UNIT_BU-2026-0111": {
+              "unitId": "BU-2026-0111",
+              "donorRef": "REF-430ACE16B1A9",
+              "bloodGroup": "O+",
+              "component": "Packed RBC",
+              "volumeMl": 300,
+              "collectedAt": 1792852228110,
+              "expiryDate": 1796481028110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "COLLECTED",
+              "custodian": "BloodBankOrg",
+              "testResult": null,
+              "lastAction": "COLLECTED",
+              "lastUpdated": 1792852228110,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "300 ml Packed RBC collected at LifeLine Blood Bank"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0111",
+          "donorRef": "REF-430ACE16B1A9",
+          "expiryDate": 1796481028110
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "3045022052b26bca46cd11671fe86113c3764b9f3b40d0d14846bcd79c9b304f9cd6a7eb02210093ee523b0b514209e0c2b0bae8af3988dfbab30800fdcccbde9f0925786c5eb7"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "304502207804552e0a5982d3f404c02b439b814097a1caec72f2374ff50bbcae5602e64f022100e414dbdedfbd315ff9d812383b3b50ee1c6dca65d8b3b4eb3c916f94eb98d0d1"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "9340033567fb98ab04879ab2639948085182f28dab7bc8f16cb5a40fe42393ef",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "CollectBlood",
+          "args": {
+            "unitId": "BU-2026-0112",
+            "donorId": "DNR-48270",
+            "bloodGroup": "AB-",
+            "component": "Whole Blood",
+            "volumeMl": 450
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792895428110,
+          "nonce": "67ab88a5661e96a1",
+          "txId": "9340033567fb98ab04879ab2639948085182f28dab7bc8f16cb5a40fe42393ef"
+        },
+        "proposalSignature": "3046022100bc572c5f4480b36f5b270afeae66e0cbb2f20e3d7c175fbc44fa042df542add5022100b9ffccc4443a36f18585d2b4a08fffa6a02da913edd7883306c9fdf2db8efacd",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0112": null
+          },
+          "writes": {
+            "UNIT_BU-2026-0112": {
+              "unitId": "BU-2026-0112",
+              "donorRef": "REF-B952D472AA72",
+              "bloodGroup": "AB-",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1792895428110,
+              "expiryDate": 1795919428110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "COLLECTED",
+              "custodian": "BloodBankOrg",
+              "testResult": null,
+              "lastAction": "COLLECTED",
+              "lastUpdated": 1792895428110,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "450 ml Whole Blood collected at LifeLine Blood Bank"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0112",
+          "donorRef": "REF-B952D472AA72",
+          "expiryDate": 1795919428110
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "3045022100d00a30af5777e89ce0660a8b30bbf7903147aed52a2970a1b192d83108cda40302203dfcda77ff60a014f632f040901c014e1adfdd4dee8c1404893641532f575dd0"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3046022100d96cb958d58ba5990e01606da1e803ba1caf336e5474284c00860c2bfe31ab67022100c5c04667fc63ae2218eee44f3ff0141da5d2b3b46333326fc1ce1b239e1e3132"
+          }
+        ],
+        "validationCode": "VALID"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938628158,
+      "txCount": 12,
+      "validationCodes": [
+        "VALID",
+        "VALID",
+        "VALID",
+        "VALID",
+        "VALID",
+        "VALID",
+        "VALID",
+        "VALID",
+        "VALID",
+        "VALID",
+        "VALID",
+        "VALID"
+      ]
+    }
+  },
+  {
+    "header": {
+      "number": 2,
+      "previousHash": "66cd221ff13f1689a9cecd18c72756d795c29ba84d0e86cae0f1635e5fb5fc50",
+      "dataHash": "6c7ea9c9c5e11e6e9b25c448b2f02a99eb7d6e7ab4d95601ec7a7c09af026687"
+    },
+    "hash": "479aabed11f65db1ed651f6e6d5e5011b3da140352ec60a9589c08a21a009b4c",
+    "data": [
+      {
+        "txId": "ed126afa1e62566305381ff6ddb1e5d9dcc37ab925d0beeb06d0882bc69a4de3",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "RecordTest",
+          "args": {
+            "unitId": "BU-2026-0101",
+            "results": {
+              "HIV": "NEGATIVE",
+              "HBV": "NEGATIVE",
+              "HCV": "NEGATIVE",
+              "Syphilis": "NEGATIVE",
+              "Malaria": "NEGATIVE"
+            },
+            "reportRef": "LAB-0101"
+          },
+          "creator": "LabOrg",
+          "timestamp": 1791923428110,
+          "nonce": "17b6d9b6f6490a5f",
+          "txId": "ed126afa1e62566305381ff6ddb1e5d9dcc37ab925d0beeb06d0882bc69a4de3"
+        },
+        "proposalSignature": "304502206a9c2feb220867428c0852aec40574d6025d65d1352283b5075b9ae5874711da022100afebf8310b756cf7575017695971776b16aa157652f0bd04b4c63d7c9f5b5af0",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0101": "1:0"
+          },
+          "writes": {
+            "UNIT_BU-2026-0101": {
+              "unitId": "BU-2026-0101",
+              "donorRef": "REF-916FE2BA723A",
+              "bloodGroup": "O+",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1791901828110,
+              "expiryDate": 1794925828110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "AVAILABLE",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1791923428110,
+                "reportRef": "LAB-0101"
+              },
+              "lastAction": "TESTED_SAFE",
+              "lastUpdated": 1791923428110,
+              "lastUpdatedBy": "LabOrg",
+              "lastDetails": "All infection screening tests negative"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0101",
+          "verdict": "SAFE",
+          "status": "AVAILABLE"
+        },
+        "endorsements": [
+          {
+            "mspId": "LabMSP",
+            "org": "LabOrg",
+            "peer": "peer0.lab.lifechain.com",
+            "signature": "30450220730e9b816706d8de50f309b0c6a142f25a888bf133d8b6589283cefb76fd9e78022100a904992b3505522571408fc5e802c4858ca48b47568a92fae869c240919926fa"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3044022070994a2bb3f1a2065d5625ba407191df7af17f91ef998c289ca43a52012c695302206c91cbd6131b47269e0cf6c7d9e344abfcab6fefecc6ba1f75005985f68d8a66"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "504d1926f687edd3349ae949811459fc3ecc92c68ca94921946b08897574e089",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "RecordTest",
+          "args": {
+            "unitId": "BU-2026-0102",
+            "results": {
+              "HIV": "NEGATIVE",
+              "HBV": "NEGATIVE",
+              "HCV": "NEGATIVE",
+              "Syphilis": "NEGATIVE",
+              "Malaria": "NEGATIVE"
+            },
+            "reportRef": "LAB-0102"
+          },
+          "creator": "LabOrg",
+          "timestamp": 1792009828110,
+          "nonce": "af42a74be6860415",
+          "txId": "504d1926f687edd3349ae949811459fc3ecc92c68ca94921946b08897574e089"
+        },
+        "proposalSignature": "304402203d32dedc435906b85818cf92d6c898a504db5ab762acdb0a1e8620becc4d33b102204395a9de796cda2a7f962da877f7a1504eab395aef23e5c1f090b3e6d1e96db5",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0102": "1:1"
+          },
+          "writes": {
+            "UNIT_BU-2026-0102": {
+              "unitId": "BU-2026-0102",
+              "donorRef": "REF-CBC84B4F0F7E",
+              "bloodGroup": "A+",
+              "component": "Packed RBC",
+              "volumeMl": 300,
+              "collectedAt": 1791988228110,
+              "expiryDate": 1795617028110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "AVAILABLE",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792009828110,
+                "reportRef": "LAB-0102"
+              },
+              "lastAction": "TESTED_SAFE",
+              "lastUpdated": 1792009828110,
+              "lastUpdatedBy": "LabOrg",
+              "lastDetails": "All infection screening tests negative"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0102",
+          "verdict": "SAFE",
+          "status": "AVAILABLE"
+        },
+        "endorsements": [
+          {
+            "mspId": "LabMSP",
+            "org": "LabOrg",
+            "peer": "peer0.lab.lifechain.com",
+            "signature": "304402204881a85bf0d7e9345900c2d35f4f4200f26fc52bab3df5b29976b6e4957dcd9802200104e549b0279b1eab5d716fe9bcf6c241d9c97197a18654b2540ef197baf5b1"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "304402207be41251c9456688dc030d88cf59fa38fdefdcab7f13b761a531fe47d4835c2d0220368148f04677e389dd914ee646bbd96b0e2aa45c6cc277b9abf9e9b89051896a"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "06626bbc376b560a593cffe438b084291136e9731dffe6a4a52d6f64821ff4f4",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "RecordTest",
+          "args": {
+            "unitId": "BU-2026-0103",
+            "results": {
+              "HIV": "NEGATIVE",
+              "HBV": "NEGATIVE",
+              "HCV": "NEGATIVE",
+              "Syphilis": "NEGATIVE",
+              "Malaria": "NEGATIVE"
+            },
+            "reportRef": "LAB-0103"
+          },
+          "creator": "LabOrg",
+          "timestamp": 1792096228110,
+          "nonce": "fac27bf247dc2d6c",
+          "txId": "06626bbc376b560a593cffe438b084291136e9731dffe6a4a52d6f64821ff4f4"
+        },
+        "proposalSignature": "304402205209f80e2322ab4d304dc7b08fbcf55a0689812b8f191b7b2f2823f77fc453cc02201b5c471bfc4020fe6aaa4202011374f053f0eea21aac82935cc2328a897735ba",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0103": "1:2"
+          },
+          "writes": {
+            "UNIT_BU-2026-0103": {
+              "unitId": "BU-2026-0103",
+              "donorRef": "REF-2D02E8A23590",
+              "bloodGroup": "B+",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1792074628110,
+              "expiryDate": 1795098628110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "AVAILABLE",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792096228110,
+                "reportRef": "LAB-0103"
+              },
+              "lastAction": "TESTED_SAFE",
+              "lastUpdated": 1792096228110,
+              "lastUpdatedBy": "LabOrg",
+              "lastDetails": "All infection screening tests negative"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0103",
+          "verdict": "SAFE",
+          "status": "AVAILABLE"
+        },
+        "endorsements": [
+          {
+            "mspId": "LabMSP",
+            "org": "LabOrg",
+            "peer": "peer0.lab.lifechain.com",
+            "signature": "304402207aa79e287dc366e2df871bba4e562974d0c0eae73c176bc59798667b7d1ad68d02200a81370738c5710673809f6fb982b84ea2e8fa00fef2a42d476733050da91cae"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3044022025a9f13d509dae2006e5039ccbdcad0b8db28350d5c82f1b36bbe33a5c91d5480220175f71baf6d5d9d8cbbe27479fe4328fe46d960f0d8fb941c471b7c6075f6178"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "5abf293156f382339b3cb26876d6af8290c0e262ba22dc504110483687ed4af8",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "RecordTest",
+          "args": {
+            "unitId": "BU-2026-0104",
+            "results": {
+              "HIV": "NEGATIVE",
+              "HBV": "NEGATIVE",
+              "HCV": "NEGATIVE",
+              "Syphilis": "NEGATIVE",
+              "Malaria": "NEGATIVE"
+            },
+            "reportRef": "LAB-0104"
+          },
+          "creator": "LabOrg",
+          "timestamp": 1792182628110,
+          "nonce": "90cc31f7e0e8d3e4",
+          "txId": "5abf293156f382339b3cb26876d6af8290c0e262ba22dc504110483687ed4af8"
+        },
+        "proposalSignature": "30440220608249848834a772bc767c52ba03f8af720be7363b0c841d31f4c2707c4652d402206c9892c52abcf899635532dce96d99acfdbb7f4f704a25efe43df93693d34f1d",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0104": "1:3"
+          },
+          "writes": {
+            "UNIT_BU-2026-0104": {
+              "unitId": "BU-2026-0104",
+              "donorRef": "REF-197FF1A5B2E8",
+              "bloodGroup": "O-",
+              "component": "Packed RBC",
+              "volumeMl": 300,
+              "collectedAt": 1792161028110,
+              "expiryDate": 1795789828110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "AVAILABLE",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792182628110,
+                "reportRef": "LAB-0104"
+              },
+              "lastAction": "TESTED_SAFE",
+              "lastUpdated": 1792182628110,
+              "lastUpdatedBy": "LabOrg",
+              "lastDetails": "All infection screening tests negative"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0104",
+          "verdict": "SAFE",
+          "status": "AVAILABLE"
+        },
+        "endorsements": [
+          {
+            "mspId": "LabMSP",
+            "org": "LabOrg",
+            "peer": "peer0.lab.lifechain.com",
+            "signature": "3044022017a659b4e2a874ec67751234372033608fd5071e3aa1d097e18c55cecc0efa2a02203358b9543757b21a9cb61e57630bcfa6d2d8c83291556bd00c7a9f3faf981e9e"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "304502203bd70a1bc1e633bf58f3a3554f20b9d6b1cc898373f0449146848a2c20f0b29f022100e6cc289356db19017b7b88463a9065266e2cbacba3da60a1849f26602f3f0d52"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "83d11f50b954f5300148108ab8296a3beedc79bb7fa6282e824ba630543e6cc2",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "RecordTest",
+          "args": {
+            "unitId": "BU-2026-0105",
+            "results": {
+              "HIV": "NEGATIVE",
+              "HBV": "NEGATIVE",
+              "HCV": "NEGATIVE",
+              "Syphilis": "NEGATIVE",
+              "Malaria": "NEGATIVE"
+            },
+            "reportRef": "LAB-0105"
+          },
+          "creator": "LabOrg",
+          "timestamp": 1792269028110,
+          "nonce": "8f90ca703fe00c90",
+          "txId": "83d11f50b954f5300148108ab8296a3beedc79bb7fa6282e824ba630543e6cc2"
+        },
+        "proposalSignature": "304502205152af734fae1768c7e761048a0d8db31f2d420d2603bbccbea00683099ca445022100973dfe5e34fe12355f886561d6c63af3c7ed4929f2d2496a0ae6385c1b379436",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0105": "1:4"
+          },
+          "writes": {
+            "UNIT_BU-2026-0105": {
+              "unitId": "BU-2026-0105",
+              "donorRef": "REF-5B1C31D44E44",
+              "bloodGroup": "AB+",
+              "component": "Plasma",
+              "volumeMl": 200,
+              "collectedAt": 1792247428110,
+              "expiryDate": 1823783428110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "AVAILABLE",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792269028110,
+                "reportRef": "LAB-0105"
+              },
+              "lastAction": "TESTED_SAFE",
+              "lastUpdated": 1792269028110,
+              "lastUpdatedBy": "LabOrg",
+              "lastDetails": "All infection screening tests negative"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0105",
+          "verdict": "SAFE",
+          "status": "AVAILABLE"
+        },
+        "endorsements": [
+          {
+            "mspId": "LabMSP",
+            "org": "LabOrg",
+            "peer": "peer0.lab.lifechain.com",
+            "signature": "304502202985f9ca1a6e815f4a36d356cd9922429fa39767a6bc71f1884dd325a9503cc20221008d4b9f9d822b923782eb9e7e676bb035fc4a00fd511dfbaa73ffa6539c415393"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "304502207051e703f25ddeed66d54e81934437c2f3c2190780cf188cb6e4914c86533f79022100be4e410414c88170f755dd20eec3634572648782b7279db533776e70c36ee9f5"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "ebd670ee130d460462e608071952d0e91c7acf1fed4d43564d1e460b4bb762d9",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "RecordTest",
+          "args": {
+            "unitId": "BU-2026-0106",
+            "results": {
+              "HIV": "NEGATIVE",
+              "HBV": "NEGATIVE",
+              "HCV": "NEGATIVE",
+              "Syphilis": "NEGATIVE",
+              "Malaria": "NEGATIVE"
+            },
+            "reportRef": "LAB-0106"
+          },
+          "creator": "LabOrg",
+          "timestamp": 1792355428110,
+          "nonce": "a15cfe9e2f19e1a2",
+          "txId": "ebd670ee130d460462e608071952d0e91c7acf1fed4d43564d1e460b4bb762d9"
+        },
+        "proposalSignature": "30440220066da400f85a8f4217724af50ed743a493e3e182d091d38f7a2d36b0dfdf4f060220571de10c85156323bd512292cf78f78829a62fa08887c12ed01175c77deaf0cf",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0106": "1:5"
+          },
+          "writes": {
+            "UNIT_BU-2026-0106": {
+              "unitId": "BU-2026-0106",
+              "donorRef": "REF-5A1ECBF9D9B8",
+              "bloodGroup": "A-",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1792333828110,
+              "expiryDate": 1795357828110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "AVAILABLE",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792355428110,
+                "reportRef": "LAB-0106"
+              },
+              "lastAction": "TESTED_SAFE",
+              "lastUpdated": 1792355428110,
+              "lastUpdatedBy": "LabOrg",
+              "lastDetails": "All infection screening tests negative"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0106",
+          "verdict": "SAFE",
+          "status": "AVAILABLE"
+        },
+        "endorsements": [
+          {
+            "mspId": "LabMSP",
+            "org": "LabOrg",
+            "peer": "peer0.lab.lifechain.com",
+            "signature": "30450221009c89d2b5bef895fbe75c6a6d81ecc3b3d4b13e1e06023213d8d5930186a1395e02201363382b2ec098642e8cf90e78cc1baa818acdab5eb70702c7f10e41da1367a3"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3045022074d3a99ee4cc5ea84e448977a9015750c06780b8b4868f45dea60b1841c6c57b022100d97d3625a33fa2a5ad69d8a90d1480be66c8157373ff6d3468aa27d6ac05e020"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "4663b31b80015f55fc176f65259ad6ea6e969e20477d1c2aeeaca0f9685d1460",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "RecordTest",
+          "args": {
+            "unitId": "BU-2026-0107",
+            "results": {
+              "HIV": "NEGATIVE",
+              "HBV": "POSITIVE",
+              "HCV": "NEGATIVE",
+              "Syphilis": "NEGATIVE",
+              "Malaria": "NEGATIVE"
+            },
+            "reportRef": "LAB-0107"
+          },
+          "creator": "LabOrg",
+          "timestamp": 1792441828110,
+          "nonce": "7701c6189e3145fd",
+          "txId": "4663b31b80015f55fc176f65259ad6ea6e969e20477d1c2aeeaca0f9685d1460"
+        },
+        "proposalSignature": "30450220404b3f3425771948ad2a0a7f9adf921b69fb0e892cafb4b615f2906d7207802702210090d0fa8b7081dc8020172f7f3986fc15d12e4242f7ee7e57d57e6c315997524a",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0107": "1:6"
+          },
+          "writes": {
+            "UNIT_BU-2026-0107": {
+              "unitId": "BU-2026-0107",
+              "donorRef": "REF-60F3A59E4C05",
+              "bloodGroup": "B-",
+              "component": "Packed RBC",
+              "volumeMl": 300,
+              "collectedAt": 1792420228110,
+              "expiryDate": 1796049028110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "REJECTED",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "POSITIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "UNSAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792441828110,
+                "reportRef": "LAB-0107"
+              },
+              "lastAction": "TESTED_UNSAFE",
+              "lastUpdated": 1792441828110,
+              "lastUpdatedBy": "LabOrg",
+              "lastDetails": "Positive screening result: HBV"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0107",
+          "verdict": "UNSAFE",
+          "status": "REJECTED"
+        },
+        "endorsements": [
+          {
+            "mspId": "LabMSP",
+            "org": "LabOrg",
+            "peer": "peer0.lab.lifechain.com",
+            "signature": "304602210087cfc4782cdc4bfc52241dd676c22ca6f475a3d2806420d2647e8e55178374780221009fb4a741d3e3348b6dc9d4fdac0b7bf8de3df0b913a0d63e5c8bc789e5c3845b"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3045022100cf70633ffb30296b9e8f9c9056909917dafe3e144bd33ed082a9d6874cb28ac102200569085fc1f6bf5e65248ae639615f9eacced284323905bd3830a9539631ebcc"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "37f4c444965ab55e5322bff9b0d0272a71a6e96a8f20f8d827bea4df67e84b6a",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "RecordTest",
+          "args": {
+            "unitId": "BU-2026-0108",
+            "results": {
+              "HIV": "NEGATIVE",
+              "HBV": "NEGATIVE",
+              "HCV": "NEGATIVE",
+              "Syphilis": "NEGATIVE",
+              "Malaria": "NEGATIVE"
+            },
+            "reportRef": "LAB-0108"
+          },
+          "creator": "LabOrg",
+          "timestamp": 1792614628110,
+          "nonce": "75ce775028d71859",
+          "txId": "37f4c444965ab55e5322bff9b0d0272a71a6e96a8f20f8d827bea4df67e84b6a"
+        },
+        "proposalSignature": "3046022100cffa5d0ae7068122a3cabbe620b76e550343d4d90ca9d7fbad89c0e3035b237a022100c40649bdb77ec94a22801471714da09ddec59612d58c3ff655bf46db823bc424",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0108": "1:7"
+          },
+          "writes": {
+            "UNIT_BU-2026-0108": {
+              "unitId": "BU-2026-0108",
+              "donorRef": "REF-DF97C783ABDD",
+              "bloodGroup": "O+",
+              "component": "Platelets",
+              "volumeMl": 60,
+              "collectedAt": 1792593028110,
+              "expiryDate": 1793025028110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "AVAILABLE",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792614628110,
+                "reportRef": "LAB-0108"
+              },
+              "lastAction": "TESTED_SAFE",
+              "lastUpdated": 1792614628110,
+              "lastUpdatedBy": "LabOrg",
+              "lastDetails": "All infection screening tests negative"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0108",
+          "verdict": "SAFE",
+          "status": "AVAILABLE"
+        },
+        "endorsements": [
+          {
+            "mspId": "LabMSP",
+            "org": "LabOrg",
+            "peer": "peer0.lab.lifechain.com",
+            "signature": "304402207408a649ddb7418a3ebb79f09fb93f3c4201bd7455f29f7818a98dc7a6dba83d02204bd512680bcdb0bb0595195c9e07a684d4a85bdedabcbdda32ca2e1da8d7827c"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "304402207346d7f57851f9761a69996bbda507643624725c9ccfd74bd461dd860cc61ae8022040bce2b7d2aedbd38f54dd5d988cccabf294b8d89b0f7661f19f391639f14222"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "d07535cb69016401e4a241bf7cf606f81147a156a4179a4a2322a586be960992",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "RecordTest",
+          "args": {
+            "unitId": "BU-2026-0109",
+            "results": {
+              "HIV": "NEGATIVE",
+              "HBV": "NEGATIVE",
+              "HCV": "NEGATIVE",
+              "Syphilis": "NEGATIVE",
+              "Malaria": "NEGATIVE"
+            },
+            "reportRef": "LAB-0109"
+          },
+          "creator": "LabOrg",
+          "timestamp": 1792701028110,
+          "nonce": "5ef47f70dbdbef5f",
+          "txId": "d07535cb69016401e4a241bf7cf606f81147a156a4179a4a2322a586be960992"
+        },
+        "proposalSignature": "3046022100f53d0ac92282651045fac4fb9a1b2d94ea3d09b0742bdbd781ed320c1c4dc6750221008d3a2705632c8abd2eac31c601b1d2d00f1c48fa0b888f404c5c6f2a7681aac4",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0109": "1:8"
+          },
+          "writes": {
+            "UNIT_BU-2026-0109": {
+              "unitId": "BU-2026-0109",
+              "donorRef": "REF-47D4848AC279",
+              "bloodGroup": "A+",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1792679428110,
+              "expiryDate": 1795703428110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "AVAILABLE",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792701028110,
+                "reportRef": "LAB-0109"
+              },
+              "lastAction": "TESTED_SAFE",
+              "lastUpdated": 1792701028110,
+              "lastUpdatedBy": "LabOrg",
+              "lastDetails": "All infection screening tests negative"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0109",
+          "verdict": "SAFE",
+          "status": "AVAILABLE"
+        },
+        "endorsements": [
+          {
+            "mspId": "LabMSP",
+            "org": "LabOrg",
+            "peer": "peer0.lab.lifechain.com",
+            "signature": "30450220481adda6557b65df55fa004435e11e6b1fc6a30f281121fb6457d188d219afba022100d5945a516e0c71e50816163b9c2292498972fb705eef456f5348ef31bb1f4cdc"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3045022100befaa57694dbe908e4ed26ef81ff4147ed7dfc566959180482ea7b1e46c63c5b02205fdf121267bf68d9353dbc4a287863bc2a00593bd0e05403c3cbda5c74d6f9e1"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "510b80e7c033f8ce2bba4fa0c7cdf2bc447a3e97714afd4fb3b328b1f9b7bf82",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "RecordTest",
+          "args": {
+            "unitId": "BU-2026-0110",
+            "results": {
+              "HIV": "NEGATIVE",
+              "HBV": "NEGATIVE",
+              "HCV": "NEGATIVE",
+              "Syphilis": "NEGATIVE",
+              "Malaria": "NEGATIVE"
+            },
+            "reportRef": "LAB-0110"
+          },
+          "creator": "LabOrg",
+          "timestamp": 1792787428110,
+          "nonce": "07b941303a2727bd",
+          "txId": "510b80e7c033f8ce2bba4fa0c7cdf2bc447a3e97714afd4fb3b328b1f9b7bf82"
+        },
+        "proposalSignature": "3045022020f493ac3a5ae0df19408ed5bf997d725be32cde6def22c02dc3ced22fd872ce022100c3e0247fb8a2c8842714725b0689640a68c776e85983dd2263ae3fe44c542bbe",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0110": "1:9"
+          },
+          "writes": {
+            "UNIT_BU-2026-0110": {
+              "unitId": "BU-2026-0110",
+              "donorRef": "REF-64680A611E06",
+              "bloodGroup": "B+",
+              "component": "Packed RBC",
+              "volumeMl": 300,
+              "collectedAt": 1792765828110,
+              "expiryDate": 1796394628110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "AVAILABLE",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792787428110,
+                "reportRef": "LAB-0110"
+              },
+              "lastAction": "TESTED_SAFE",
+              "lastUpdated": 1792787428110,
+              "lastUpdatedBy": "LabOrg",
+              "lastDetails": "All infection screening tests negative"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0110",
+          "verdict": "SAFE",
+          "status": "AVAILABLE"
+        },
+        "endorsements": [
+          {
+            "mspId": "LabMSP",
+            "org": "LabOrg",
+            "peer": "peer0.lab.lifechain.com",
+            "signature": "3044022036b6df7df31a1d937020378689cc0b1e7bd5ee72adca76b97f26fc0e197852d602206acf9a049c8eaabeff3dc6e72296c80d371b36a52256297ccedd99ba0b1c59b3"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3045022100a8c01122f9d54cdeb19b88433b05a9c4934023ea662de2f58e024f953c139c450220336cca94e51f2b0774023abac5f1fc89a7f354f291daa548b1cd39b05b951f1a"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "de3fbee4f105b71b052d76c3cee205d595c5f3c56defd376e7456bd26784547b",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "RecordTest",
+          "args": {
+            "unitId": "BU-2026-0111",
+            "results": {
+              "HIV": "NEGATIVE",
+              "HBV": "NEGATIVE",
+              "HCV": "NEGATIVE",
+              "Syphilis": "NEGATIVE",
+              "Malaria": "NEGATIVE"
+            },
+            "reportRef": "LAB-0111"
+          },
+          "creator": "LabOrg",
+          "timestamp": 1792873828110,
+          "nonce": "39530aa8bfb61b16",
+          "txId": "de3fbee4f105b71b052d76c3cee205d595c5f3c56defd376e7456bd26784547b"
+        },
+        "proposalSignature": "304502203efea78a5f8af5376c4b06d9b075a9dc18ce3e5a517a377cbdcb4d2975ce8f670221008ca32c93b67b264059c018eae19c4f5a7d8157bc89ccd08d7c052b1964b913dd",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0111": "1:10"
+          },
+          "writes": {
+            "UNIT_BU-2026-0111": {
+              "unitId": "BU-2026-0111",
+              "donorRef": "REF-430ACE16B1A9",
+              "bloodGroup": "O+",
+              "component": "Packed RBC",
+              "volumeMl": 300,
+              "collectedAt": 1792852228110,
+              "expiryDate": 1796481028110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "AVAILABLE",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792873828110,
+                "reportRef": "LAB-0111"
+              },
+              "lastAction": "TESTED_SAFE",
+              "lastUpdated": 1792873828110,
+              "lastUpdatedBy": "LabOrg",
+              "lastDetails": "All infection screening tests negative"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0111",
+          "verdict": "SAFE",
+          "status": "AVAILABLE"
+        },
+        "endorsements": [
+          {
+            "mspId": "LabMSP",
+            "org": "LabOrg",
+            "peer": "peer0.lab.lifechain.com",
+            "signature": "3044022069fcabdfa2139bc1fe935310e0501ad0c3866d55cb89b04beb39475730b6a71d02201eda54e2d8725a175994fe2692af8715d0e49b2ab81fde6d3e3f97d91b3c0555"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3046022100e54dbd050b457abf0e19a671a4f296a70966c93a5de91c391f402bc097895d87022100ac84ffde842f212c2d59ad93f98d1653aaee8b003bb9213aff16b254a529c6b7"
+          }
+        ],
+        "validationCode": "VALID"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938628202,
+      "txCount": 11,
+      "validationCodes": [
+        "VALID",
+        "VALID",
+        "VALID",
+        "VALID",
+        "VALID",
+        "VALID",
+        "VALID",
+        "VALID",
+        "VALID",
+        "VALID",
+        "VALID"
+      ]
+    }
+  },
+  {
+    "header": {
+      "number": 3,
+      "previousHash": "479aabed11f65db1ed651f6e6d5e5011b3da140352ec60a9589c08a21a009b4c",
+      "dataHash": "22a12fa5b965e339b7151f6db0c16a66f66c273f071936a9d8abb22a314ef4f0"
+    },
+    "hash": "36470c912401472132dd17654203c11c6fc4857cbaafb59e88f48454dc413cc3",
+    "data": [
+      {
+        "txId": "eb3f4bf92415c7c9ff44019afe5175eb3f63cdbb168c011e9ac85367abd1d01b",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "TransferUnit",
+          "args": {
+            "unitId": "BU-2026-0101",
+            "toOrg": "CityCareOrg"
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792168228110,
+          "nonce": "6beff86dc638e86b",
+          "txId": "eb3f4bf92415c7c9ff44019afe5175eb3f63cdbb168c011e9ac85367abd1d01b"
+        },
+        "proposalSignature": "3046022100a78c85badc85f9bfbdc0409bacda2f99c85f5b33478fd1286003afed35410039022100ffae14da58fbf33f8dea2ba933890d5ca93c9f12c718a57dc4f3c68314614f36",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0101": "2:0"
+          },
+          "writes": {
+            "UNIT_BU-2026-0101": {
+              "unitId": "BU-2026-0101",
+              "donorRef": "REF-916FE2BA723A",
+              "bloodGroup": "O+",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1791901828110,
+              "expiryDate": 1794925828110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "IN_TRANSIT",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1791923428110,
+                "reportRef": "LAB-0101"
+              },
+              "lastAction": "DISPATCHED",
+              "lastUpdated": 1792168228110,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "Dispatched to CityCareOrg",
+              "transferTo": "CityCareOrg"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0101",
+          "toOrg": "CityCareOrg"
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "3044022062262f13ff905565d5c5c90c43e5de9b0e15d219b7f7d44a0bbf8b0ed7f3de6602200a98fd93cb0856eca1ce1410aaa6834cbba20155ab986251d343b948b713838e"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "304602210090e1410ef3f98121ad413258ed58f0b5157d6233b78c7bb5b81e4f2d51183846022100f135e4c5a4edd434088485eeb8c4c2d5bab761bdd049732c1d731632bb4a0dc3"
+          }
+        ],
+        "validationCode": "VALID"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938628207,
+      "txCount": 1,
+      "validationCodes": [
+        "VALID"
+      ]
+    }
+  },
+  {
+    "header": {
+      "number": 4,
+      "previousHash": "36470c912401472132dd17654203c11c6fc4857cbaafb59e88f48454dc413cc3",
+      "dataHash": "36448d130ad39438cc6c6dd8ec9846fefe5b5afdf4e691efc2925ec6b9f38f43"
+    },
+    "hash": "94b29ba0387d110901778f73aa061cbdb2ef2225d86ac8cd3a0c7f30281d8fab",
+    "data": [
+      {
+        "txId": "109bc7d35bc6c720b24dcbcd58a714ddbfff6f8bf6e5c02de410318ce5183656",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "ReceiveUnit",
+          "args": {
+            "unitId": "BU-2026-0101"
+          },
+          "creator": "CityCareOrg",
+          "timestamp": 1792175428110,
+          "nonce": "9e392a9167c4d666",
+          "txId": "109bc7d35bc6c720b24dcbcd58a714ddbfff6f8bf6e5c02de410318ce5183656"
+        },
+        "proposalSignature": "3045022100a992cb12deddacf4722a6c4d161def04b4f922338706c3f1c0a8307638c7d358022034a1d6af21cb6f6599220c271ab2a07e42ae882be8f518af6c4d6a9471f8714e",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0101": "3:0"
+          },
+          "writes": {
+            "UNIT_BU-2026-0101": {
+              "unitId": "BU-2026-0101",
+              "donorRef": "REF-916FE2BA723A",
+              "bloodGroup": "O+",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1791901828110,
+              "expiryDate": 1794925828110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "AT_HOSPITAL",
+              "custodian": "CityCareOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1791923428110,
+                "reportRef": "LAB-0101"
+              },
+              "lastAction": "RECEIVED",
+              "lastUpdated": 1792175428110,
+              "lastUpdatedBy": "CityCareOrg",
+              "lastDetails": "Received and stored by CityCareOrg"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0101",
+          "custodian": "CityCareOrg"
+        },
+        "endorsements": [
+          {
+            "mspId": "CityCareMSP",
+            "org": "CityCareOrg",
+            "peer": "peer0.citycare.lifechain.com",
+            "signature": "30460221008077b8ed1846c93fc7dc7d218bc330c8387c23a262c2940aeabd32e796112a32022100ca5183b67a69db5d0384769cde63b22c569c2a1a0fbbef2365b9e3fb4d5798f0"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3046022100c47a5a4f119353998a4639af9e8836251418098167c4a1e33aeb5b896a72fce7022100f47014bade0a3d523fb681a1855e1a0530909dea34121ede5dfc5117131fee3b"
+          }
+        ],
+        "validationCode": "VALID"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938628213,
+      "txCount": 1,
+      "validationCodes": [
+        "VALID"
+      ]
+    }
+  },
+  {
+    "header": {
+      "number": 5,
+      "previousHash": "94b29ba0387d110901778f73aa061cbdb2ef2225d86ac8cd3a0c7f30281d8fab",
+      "dataHash": "9c879d2787c1eed3b3b56b9a17976529b3b7999435a7960ddd8cb1fa1d37c203"
+    },
+    "hash": "6166125156b85078dfa78257366852afce9ba583382bb854ccd40e9ccea2f6a0",
+    "data": [
+      {
+        "txId": "b089bea1b7da86fe3be49b1cb4ccf077a660e34f4c09ea2ee3708184454d419e",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "TransfuseUnit",
+          "args": {
+            "unitId": "BU-2026-0101",
+            "patientId": "PAT-CC-7781",
+            "patientBloodGroup": "A+"
+          },
+          "creator": "CityCareOrg",
+          "timestamp": 1792251028110,
+          "nonce": "062d23fd7646e136",
+          "txId": "b089bea1b7da86fe3be49b1cb4ccf077a660e34f4c09ea2ee3708184454d419e"
+        },
+        "proposalSignature": "304502203d631c7280e0138260c5510dd81b23fc164eb7f5923cf8fd74c5b803e7108a88022100926d0775c46c0f5a6512ed507887fc1110c5f06e8faf4503188210b02183baf6",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0101": "4:0"
+          },
+          "writes": {
+            "UNIT_BU-2026-0101": {
+              "unitId": "BU-2026-0101",
+              "donorRef": "REF-916FE2BA723A",
+              "bloodGroup": "O+",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1791901828110,
+              "expiryDate": 1794925828110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "TRANSFUSED",
+              "custodian": "CityCareOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1791923428110,
+                "reportRef": "LAB-0101"
+              },
+              "lastAction": "TRANSFUSED",
+              "lastUpdated": 1792251028110,
+              "lastUpdatedBy": "CityCareOrg",
+              "lastDetails": "Transfused to patient REF-C79C2922AFA0 (A+)",
+              "transfusion": {
+                "patientRef": "REF-C79C2922AFA0",
+                "patientBloodGroup": "A+",
+                "at": 1792251028110,
+                "hospital": "CityCareOrg"
+              }
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0101",
+          "patientRef": "REF-C79C2922AFA0"
+        },
+        "endorsements": [
+          {
+            "mspId": "CityCareMSP",
+            "org": "CityCareOrg",
+            "peer": "peer0.citycare.lifechain.com",
+            "signature": "30450220290a6ed3f1a337ee5f397edfa440a791069b45364955ca3e87c58a1bd2a200ff022100b18eeb2331116faa1bb8c3fa38cdf18c7afc19e2d27a59b7b9bc12948c98a3c0"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "304502200f6d5c27ed0233e884c50802bcdb4333407895eff3de130fde6f797b04f6e772022100b4df3376cb129905a138dd36532aa984a88d4d66f32dc1fa909e7d3292919689"
+          }
+        ],
+        "validationCode": "VALID"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938628217,
+      "txCount": 1,
+      "validationCodes": [
+        "VALID"
+      ]
+    }
+  },
+  {
+    "header": {
+      "number": 6,
+      "previousHash": "6166125156b85078dfa78257366852afce9ba583382bb854ccd40e9ccea2f6a0",
+      "dataHash": "5a9b1d2f1f853c9025bad21293405eafe8ab956b28258670d440f97bb7e2a48e"
+    },
+    "hash": "bfee261b563f70a815a76c48b93f729a21ed95e356df238058b3e8b1463ea829",
+    "data": [
+      {
+        "txId": "d03939aa971e3e05475c5d73f029f7813e5092de950cff49043f2e7339efd529",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "TransferUnit",
+          "args": {
+            "unitId": "BU-2026-0104",
+            "toOrg": "GreenValleyOrg"
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792517428110,
+          "nonce": "833b3b21ea03bcda",
+          "txId": "d03939aa971e3e05475c5d73f029f7813e5092de950cff49043f2e7339efd529"
+        },
+        "proposalSignature": "3045022025db69f6644c9f3cd1ec17f20202c60a75506b3422248005bfafea89a4da6ca8022100e3a514a87e946b3423918841d5840309efd23436a3bbafea9bc3f87313d49afb",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0104": "2:3"
+          },
+          "writes": {
+            "UNIT_BU-2026-0104": {
+              "unitId": "BU-2026-0104",
+              "donorRef": "REF-197FF1A5B2E8",
+              "bloodGroup": "O-",
+              "component": "Packed RBC",
+              "volumeMl": 300,
+              "collectedAt": 1792161028110,
+              "expiryDate": 1795789828110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "IN_TRANSIT",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792182628110,
+                "reportRef": "LAB-0104"
+              },
+              "lastAction": "DISPATCHED",
+              "lastUpdated": 1792517428110,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "Dispatched to GreenValleyOrg",
+              "transferTo": "GreenValleyOrg"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0104",
+          "toOrg": "GreenValleyOrg"
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "3045022009f6f20f9ea7663cee5922b96f4b8e9078faccfb2fb18112d68a1336239959cf022100fd7f910cb222fc9bfc17ea8b7fd0cf1817d27e8f9ef9811c6b296bd76d3cf8ae"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "30460221008956dbb3620ee60c4cee71873ad6e3b17fc5593a0b20c6c92c7680c1b3a35864022100893e76cba8d383cbabf24ac8e29d642c9c330360fb79a3abaeccfdf6a2e06eb6"
+          }
+        ],
+        "validationCode": "VALID"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938628223,
+      "txCount": 1,
+      "validationCodes": [
+        "VALID"
+      ]
+    }
+  },
+  {
+    "header": {
+      "number": 7,
+      "previousHash": "bfee261b563f70a815a76c48b93f729a21ed95e356df238058b3e8b1463ea829",
+      "dataHash": "fc11237146fbdde353e15ee279b31d9d749a3ab205ca6b9e5bbd89325f4b0cf6"
+    },
+    "hash": "a291feef53fa469b5445b11ea6e52b1c8017d2001d1638c914dd807ab15cddb3",
+    "data": [
+      {
+        "txId": "bdf976f3321edf9f4f156c8863df2182791a1a7970d16f0ca7c208da9fc023f4",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "ReceiveUnit",
+          "args": {
+            "unitId": "BU-2026-0104"
+          },
+          "creator": "GreenValleyOrg",
+          "timestamp": 1792524628110,
+          "nonce": "54078333df43cff6",
+          "txId": "bdf976f3321edf9f4f156c8863df2182791a1a7970d16f0ca7c208da9fc023f4"
+        },
+        "proposalSignature": "3046022100f8f67d5f16c8ec7893b20f75b413782bca944beaf0570b4cf6a5e44e0bd284ae022100fb3de154af0b187c363d4267a1006e315133019f009d65ce753476005962d2e4",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0104": "6:0"
+          },
+          "writes": {
+            "UNIT_BU-2026-0104": {
+              "unitId": "BU-2026-0104",
+              "donorRef": "REF-197FF1A5B2E8",
+              "bloodGroup": "O-",
+              "component": "Packed RBC",
+              "volumeMl": 300,
+              "collectedAt": 1792161028110,
+              "expiryDate": 1795789828110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "AT_HOSPITAL",
+              "custodian": "GreenValleyOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792182628110,
+                "reportRef": "LAB-0104"
+              },
+              "lastAction": "RECEIVED",
+              "lastUpdated": 1792524628110,
+              "lastUpdatedBy": "GreenValleyOrg",
+              "lastDetails": "Received and stored by GreenValleyOrg"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0104",
+          "custodian": "GreenValleyOrg"
+        },
+        "endorsements": [
+          {
+            "mspId": "GreenValleyMSP",
+            "org": "GreenValleyOrg",
+            "peer": "peer0.greenvalley.lifechain.com",
+            "signature": "3045022100b28dd130c9efd7c58b9eaf8060f0623700c4cb36803b5828060c64984796ff5502202f06a8eb418ab35fbd09590bc2b3345c89da36a859adaf19be6c2edb8b41fa65"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3045022100c85ae497eab7e398e5da871810fe5638e6e8dc6ff6b75ef2cbf4432f8f8022fa022066707e728325cd3e450a7cc8298116af0e6dcd787c82033ff3017d2c80e390cd"
+          }
+        ],
+        "validationCode": "VALID"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938628229,
+      "txCount": 1,
+      "validationCodes": [
+        "VALID"
+      ]
+    }
+  },
+  {
+    "header": {
+      "number": 8,
+      "previousHash": "a291feef53fa469b5445b11ea6e52b1c8017d2001d1638c914dd807ab15cddb3",
+      "dataHash": "d9ce974b8cd8b3b570a14d46c64b86fab27f033820f681e9b7841b060e2cc7b8"
+    },
+    "hash": "b6dd196e4283199eb68e5da95a499463c7a00ba409b3a1a02b21876a554a6c2b",
+    "data": [
+      {
+        "txId": "f314e67776a1ed68fb9f783d126648eeef3176756dd0d0f09ea875282e2c0263",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "TransfuseUnit",
+          "args": {
+            "unitId": "BU-2026-0104",
+            "patientId": "PAT-GV-1029",
+            "patientBloodGroup": "B-"
+          },
+          "creator": "GreenValleyOrg",
+          "timestamp": 1792600228110,
+          "nonce": "24359521ea5fd7cc",
+          "txId": "f314e67776a1ed68fb9f783d126648eeef3176756dd0d0f09ea875282e2c0263"
+        },
+        "proposalSignature": "3045022100fd0aac5c61fd9d6735d910dda6f9d78b41c15b0ed92af229e82b6f2893331907022037e8e2c5ae81e544008fb17aeca268938c5bf5c4bd39ae1acbe4073bc5fb36a7",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0104": "7:0"
+          },
+          "writes": {
+            "UNIT_BU-2026-0104": {
+              "unitId": "BU-2026-0104",
+              "donorRef": "REF-197FF1A5B2E8",
+              "bloodGroup": "O-",
+              "component": "Packed RBC",
+              "volumeMl": 300,
+              "collectedAt": 1792161028110,
+              "expiryDate": 1795789828110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "TRANSFUSED",
+              "custodian": "GreenValleyOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792182628110,
+                "reportRef": "LAB-0104"
+              },
+              "lastAction": "TRANSFUSED",
+              "lastUpdated": 1792600228110,
+              "lastUpdatedBy": "GreenValleyOrg",
+              "lastDetails": "Transfused to patient REF-32DFBBB748E5 (B-)",
+              "transfusion": {
+                "patientRef": "REF-32DFBBB748E5",
+                "patientBloodGroup": "B-",
+                "at": 1792600228110,
+                "hospital": "GreenValleyOrg"
+              }
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0104",
+          "patientRef": "REF-32DFBBB748E5"
+        },
+        "endorsements": [
+          {
+            "mspId": "GreenValleyMSP",
+            "org": "GreenValleyOrg",
+            "peer": "peer0.greenvalley.lifechain.com",
+            "signature": "3045022100c3dfdc7ba6a619b584756785616f92a1b6d4dfacb0b58827c960597bf1fd0f5b0220088e91b6fa024e8caca23f3895fb68d145c551b73dd58524a83e6f4825d31ce8"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3046022100fef52a45336f98a1d6641eb4fce70472e6a4efcba3211a15b8e8d2f368291350022100b962f4e28972f652362fc78de08b40892ca73a5cc25c5833f6ee0ed52c53e197"
+          }
+        ],
+        "validationCode": "VALID"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938628236,
+      "txCount": 1,
+      "validationCodes": [
+        "VALID"
+      ]
+    }
+  },
+  {
+    "header": {
+      "number": 9,
+      "previousHash": "b6dd196e4283199eb68e5da95a499463c7a00ba409b3a1a02b21876a554a6c2b",
+      "dataHash": "8ad611c4803dcef3d3c90d3c13050b2b53aab67cbf3d8e56a0471c39b0a6e2a0"
+    },
+    "hash": "effef98bebb7d582e56ea8ed934152aa8c1719096d0e743ea70a415579e32340",
+    "data": [
+      {
+        "txId": "bfe10c5c14ba35befd55c20ab67e69ff574fa891a6b969095ad26d13dc8a7592",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "TransferUnit",
+          "args": {
+            "unitId": "BU-2026-0102",
+            "toOrg": "CityCareOrg"
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792683028110,
+          "nonce": "926d3a52de019b92",
+          "txId": "bfe10c5c14ba35befd55c20ab67e69ff574fa891a6b969095ad26d13dc8a7592"
+        },
+        "proposalSignature": "304502206baa3a1ba993131cf9f39268bf7c90f6e317292dddd0f95288b6d955f4081d24022100d89c0fd5cfc018a59fdf5d5068ae9071ecc7201b6989a1e9b891fe6201adcc2d",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0102": "2:1"
+          },
+          "writes": {
+            "UNIT_BU-2026-0102": {
+              "unitId": "BU-2026-0102",
+              "donorRef": "REF-CBC84B4F0F7E",
+              "bloodGroup": "A+",
+              "component": "Packed RBC",
+              "volumeMl": 300,
+              "collectedAt": 1791988228110,
+              "expiryDate": 1795617028110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "IN_TRANSIT",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792009828110,
+                "reportRef": "LAB-0102"
+              },
+              "lastAction": "DISPATCHED",
+              "lastUpdated": 1792683028110,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "Dispatched to CityCareOrg",
+              "transferTo": "CityCareOrg"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0102",
+          "toOrg": "CityCareOrg"
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "3046022100915ad438cf05957834dc366e5f4c318bc0ee1b31e9af9dfd56325fd7f2c879a5022100cdf79f55e3a03c60e23bf607924849ad1fa3b628e841c5dd05f3a5adb14c5c78"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3046022100dee036ac155f8cc3daf7e5dcf1039122ff8668fb4d43a4893ffcb7e27c7b6c42022100fa88e605c146360e13fa79b5505e6946f9cbb00b8bdf6a79c5644801543875aa"
+          }
+        ],
+        "validationCode": "VALID"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938628242,
+      "txCount": 1,
+      "validationCodes": [
+        "VALID"
+      ]
+    }
+  },
+  {
+    "header": {
+      "number": 10,
+      "previousHash": "effef98bebb7d582e56ea8ed934152aa8c1719096d0e743ea70a415579e32340",
+      "dataHash": "235556ca51aca8cde2c2c4ea7796c190f7fb77989c03f7c8c79c8020d9d98d59"
+    },
+    "hash": "d193c936965ad9da863534e887374b1c47e219d408cd792457cb01a724ce262a",
+    "data": [
+      {
+        "txId": "6ef51dce410a2acf7a9bcbd0425bfbdb5b52fdcbd5058947a59d8ae0893c6c66",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "ReceiveUnit",
+          "args": {
+            "unitId": "BU-2026-0102"
+          },
+          "creator": "CityCareOrg",
+          "timestamp": 1792690228110,
+          "nonce": "ca90194d2e0a392a",
+          "txId": "6ef51dce410a2acf7a9bcbd0425bfbdb5b52fdcbd5058947a59d8ae0893c6c66"
+        },
+        "proposalSignature": "304502203dc0abdb2a711563f64befeb466ed615a9a8ebff400e6f30352c0cc43504ac39022100f4639c7ee6477d952378e61d2ae9055a47f912d725556268a495d45ee6c2877a",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0102": "9:0"
+          },
+          "writes": {
+            "UNIT_BU-2026-0102": {
+              "unitId": "BU-2026-0102",
+              "donorRef": "REF-CBC84B4F0F7E",
+              "bloodGroup": "A+",
+              "component": "Packed RBC",
+              "volumeMl": 300,
+              "collectedAt": 1791988228110,
+              "expiryDate": 1795617028110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "AT_HOSPITAL",
+              "custodian": "CityCareOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792009828110,
+                "reportRef": "LAB-0102"
+              },
+              "lastAction": "RECEIVED",
+              "lastUpdated": 1792690228110,
+              "lastUpdatedBy": "CityCareOrg",
+              "lastDetails": "Received and stored by CityCareOrg"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0102",
+          "custodian": "CityCareOrg"
+        },
+        "endorsements": [
+          {
+            "mspId": "CityCareMSP",
+            "org": "CityCareOrg",
+            "peer": "peer0.citycare.lifechain.com",
+            "signature": "30450220217bac324f4b0488ba8eb8b8b4e5b6753c9867780e7b55fa57f4801fadb6cc28022100c34f81d727fefb2c12055f50c3688ce1665079b5b07d4ce9fcdea9fb37672273"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "304402200ebaed797701ae7d32c63078af5a4c30797cefeac2b8ddf54c922ad00ad31eb502205e544faa6a0c2b64e7865cf3f965cebc2ba288cb591e26a21168bb25c4b92d90"
+          }
+        ],
+        "validationCode": "VALID"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938628249,
+      "txCount": 1,
+      "validationCodes": [
+        "VALID"
+      ]
+    }
+  },
+  {
+    "header": {
+      "number": 11,
+      "previousHash": "d193c936965ad9da863534e887374b1c47e219d408cd792457cb01a724ce262a",
+      "dataHash": "5802bd5c81503d0e2fc9615146bc445ba016f23f28ef86689e2db2dfab497143"
+    },
+    "hash": "d5eeda60e311c7e1fe4a3e3f0c33bc6d38ea1e99821dd26695f5ff126d7003b7",
+    "data": [
+      {
+        "txId": "5d3abf8eaff005a8fd8e8ce85968bfcb9ca4ddf0991a0118f81da71c3c618ae3",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "DiscardUnit",
+          "args": {
+            "unitId": "BU-2026-0107",
+            "reason": "Reactive for HBV – destroyed as biomedical waste"
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792506628110,
+          "nonce": "d323b03474b0ed17",
+          "txId": "5d3abf8eaff005a8fd8e8ce85968bfcb9ca4ddf0991a0118f81da71c3c618ae3"
+        },
+        "proposalSignature": "304502207b38def49fd3ec009bd8c1ca829347a9ad6d32e1e531bb29228af8f7a09f1736022100e5ab4bb45290a8e89fc556d6b4408ff3b79a3b2e958aa3d6e0e68f28b8a2d5b9",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0107": "2:6"
+          },
+          "writes": {
+            "UNIT_BU-2026-0107": {
+              "unitId": "BU-2026-0107",
+              "donorRef": "REF-60F3A59E4C05",
+              "bloodGroup": "B-",
+              "component": "Packed RBC",
+              "volumeMl": 300,
+              "collectedAt": 1792420228110,
+              "expiryDate": 1796049028110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "DISCARDED",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "POSITIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "UNSAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792441828110,
+                "reportRef": "LAB-0107"
+              },
+              "lastAction": "DISCARDED",
+              "lastUpdated": 1792506628110,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "Reactive for HBV – destroyed as biomedical waste"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0107"
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "304402202d5b4315d661e8d88b5a8dd1d5b800ee44e53d7b0ec94a7d37681a09a3ee3ccd02202b4122caef5590b8febd75761a68b8256e29595d564e16be193882682ef8816a"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3045022100cd40812a0c8383b8d41f1b84cfbaab2a9c821c8a0ceb2605655180f1487134b20220613ed6b2de4ab169fa7a777bc6f877ff02904c2f0d33a2dd0f4e2dba1a22e79c"
+          }
+        ],
+        "validationCode": "VALID"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938628255,
+      "txCount": 1,
+      "validationCodes": [
+        "VALID"
+      ]
+    }
+  },
+  {
+    "header": {
+      "number": 12,
+      "previousHash": "d5eeda60e311c7e1fe4a3e3f0c33bc6d38ea1e99821dd26695f5ff126d7003b7",
+      "dataHash": "316fadb9bcaa5a4387d53742cfcd29a83d0e87b41a169f2d36f8d5c5b7305be8"
+    },
+    "hash": "e2714b8e7b7384308f70be20d66a318e7779dbef142c7603a7f7a004b6746be8",
+    "data": [
+      {
+        "txId": "79e5aa35ee42d55482d7a247238550deb1735f527f78e38f65e75b52cba44c5c",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "TransferUnit",
+          "args": {
+            "unitId": "BU-2026-0103",
+            "toOrg": "GreenValleyOrg"
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792859428110,
+          "nonce": "fca31ab02326637f",
+          "txId": "79e5aa35ee42d55482d7a247238550deb1735f527f78e38f65e75b52cba44c5c"
+        },
+        "proposalSignature": "3046022100f6955f80fcbbee676f2bbef48291c07ee9ba72a9839a1c1ed2f7fa0561283850022100f230566d541536b65dc7e4bb9c91b7011fcc0534fa913cc1193247f1d65a341f",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0103": "2:2"
+          },
+          "writes": {
+            "UNIT_BU-2026-0103": {
+              "unitId": "BU-2026-0103",
+              "donorRef": "REF-2D02E8A23590",
+              "bloodGroup": "B+",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1792074628110,
+              "expiryDate": 1795098628110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "IN_TRANSIT",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792096228110,
+                "reportRef": "LAB-0103"
+              },
+              "lastAction": "DISPATCHED",
+              "lastUpdated": 1792859428110,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "Dispatched to GreenValleyOrg",
+              "transferTo": "GreenValleyOrg"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0103",
+          "toOrg": "GreenValleyOrg"
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "3046022100a858235eb73f1029d65e1c71b0acce2f87019127db0935b42a86bf94e4416f0a022100ba1b852bbd2618a31d1c9315ee8fdb8cee7657bc3e4c9e3a5fb1f50a07b4cc64"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3046022100d052b98acf9684f52ddd1020b0fea6a6bbbbc356d7d0e6da24a6ac5aa72997c6022100df663d182589348818102cc341c56c81ad26a78e2c6400d24241cb9c3aebc3e3"
+          }
+        ],
+        "validationCode": "VALID"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938628263,
+      "txCount": 1,
+      "validationCodes": [
+        "VALID"
+      ]
+    }
+  },
+  {
+    "header": {
+      "number": 13,
+      "previousHash": "e2714b8e7b7384308f70be20d66a318e7779dbef142c7603a7f7a004b6746be8",
+      "dataHash": "8c3be8700726c1b86c621339ded74ff3d0bd3b2d3c127fa3db709ca716c6563e"
+    },
+    "hash": "a134288c4f3ef2465cda6469fc338b26bfb9d32c1bfc927a815f882b94e1961b",
+    "data": [
+      {
+        "txId": "965b6bceef8570458e0ea792dc6441a55b3cf936c5f27193d182a354ea5d289d",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "CollectBlood",
+          "args": {
+            "unitId": "BU-2026-0113",
+            "donorId": "DNR-48301",
+            "bloodGroup": "B+",
+            "component": "Whole Blood",
+            "volumeMl": "450",
+            "collectionCenter": "LifeLine Blood Bank – Andheri Camp"
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792938635631,
+          "nonce": "ba689d85a2af7c21",
+          "txId": "965b6bceef8570458e0ea792dc6441a55b3cf936c5f27193d182a354ea5d289d"
+        },
+        "proposalSignature": "304502207ea0a32932f4d5873036350f7b868183718552c65dc2879ca4641589806ec3e60221008b1f035f6e247f30ca0ba3e933e6a823d237f61a39a5c4011c3ceddcb9b7806b",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0113": null
+          },
+          "writes": {
+            "UNIT_BU-2026-0113": {
+              "unitId": "BU-2026-0113",
+              "donorRef": "REF-829480E20204",
+              "bloodGroup": "B+",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1792938635631,
+              "expiryDate": 1795962635631,
+              "collectionCenter": "LifeLine Blood Bank – Andheri Camp",
+              "status": "COLLECTED",
+              "custodian": "BloodBankOrg",
+              "testResult": null,
+              "lastAction": "COLLECTED",
+              "lastUpdated": 1792938635631,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "450 ml Whole Blood collected at LifeLine Blood Bank – Andheri Camp"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0113",
+          "donorRef": "REF-829480E20204",
+          "expiryDate": 1795962635631
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "3045022100c01980ca267ccef701357cb95e5f83e811c528ff492d9fa265b755e9ef62fa2d02205e44bc3abc9a2154dbeb6a64b078d63f44ce8b54034dd0014748b9bca6e98d79"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "304502206e0ac55a4469f4445e4a07bd6405ebee039415ea3d0f5e161d32f7a27c14e526022100d7af37c3b30966c8edb7d5592feb467274936e6096538732647ac152456e9433"
+          }
+        ],
+        "validationCode": "VALID"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938635638,
+      "txCount": 1,
+      "validationCodes": [
+        "VALID"
+      ]
+    }
+  },
+  {
+    "header": {
+      "number": 14,
+      "previousHash": "a134288c4f3ef2465cda6469fc338b26bfb9d32c1bfc927a815f882b94e1961b",
+      "dataHash": "387a58c2a36ec53b0fd4f0d84e76b577e63fb06599fc682c560f1dc4b68e310a"
+    },
+    "hash": "3b36b03654d190029342fbd79bad02e94516cede771f5089c6aa578371f13314",
+    "data": [
+      {
+        "txId": "39fdc9cfab710b0ac5a3673c0ac030b2a6c796a471b4e605098031559fea51c4",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "RecordTest",
+          "args": {
+            "unitId": "BU-2026-0113",
+            "reportRef": "LAB-38378",
+            "results": {
+              "HIV": "NEGATIVE",
+              "HBV": "NEGATIVE",
+              "HCV": "NEGATIVE",
+              "Syphilis": "NEGATIVE",
+              "Malaria": "NEGATIVE"
+            }
+          },
+          "creator": "LabOrg",
+          "timestamp": 1792938639277,
+          "nonce": "fa9bebb05d0c9a5c",
+          "txId": "39fdc9cfab710b0ac5a3673c0ac030b2a6c796a471b4e605098031559fea51c4"
+        },
+        "proposalSignature": "3046022100a2855ac9405239b169e659ddd96b4b1bcde770cbd5f06c262426d0a6474bd6eb022100f1df91f76cab7804dcdbc0cf34d14351a1cd310afef454604988fe1b62940efb",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0113": "13:0"
+          },
+          "writes": {
+            "UNIT_BU-2026-0113": {
+              "unitId": "BU-2026-0113",
+              "donorRef": "REF-829480E20204",
+              "bloodGroup": "B+",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1792938635631,
+              "expiryDate": 1795962635631,
+              "collectionCenter": "LifeLine Blood Bank – Andheri Camp",
+              "status": "AVAILABLE",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792938639277,
+                "reportRef": "LAB-38378"
+              },
+              "lastAction": "TESTED_SAFE",
+              "lastUpdated": 1792938639277,
+              "lastUpdatedBy": "LabOrg",
+              "lastDetails": "All infection screening tests negative"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0113",
+          "verdict": "SAFE",
+          "status": "AVAILABLE"
+        },
+        "endorsements": [
+          {
+            "mspId": "LabMSP",
+            "org": "LabOrg",
+            "peer": "peer0.lab.lifechain.com",
+            "signature": "3045022100e341d886b8aec4bf7747de40531cb707dd3a55aee0cb62e6b2ee4b8e728fe7750220134d0fc01c931d84033ab5ae451a09b28071289ae6e9ad0e01911931cdd9a42d"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3045022066d2a54b50e0201277118f1a1dd0ed410886add46c22bcdd7095cc0e36be2df50221009b27dac72b6cd929e1c04eb12da278074b470775e4ebb2adace70ebff00ce91c"
+          }
+        ],
+        "validationCode": "VALID"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938639282,
+      "txCount": 1,
+      "validationCodes": [
+        "VALID"
+      ]
+    }
+  },
+  {
+    "header": {
+      "number": 15,
+      "previousHash": "3b36b03654d190029342fbd79bad02e94516cede771f5089c6aa578371f13314",
+      "dataHash": "1b89c8f346af68c9e6e8417945216ac0288bbbc8aba66adbbab77a81987c0c24"
+    },
+    "hash": "53c5badcb2e26e429a7466e3cbb207f1e460fe5625edc46cf288d89bb5a9d78b",
+    "data": [
+      {
+        "txId": "91b79521bbe4e2356a0a0131e59a2fb187768e7d919be38fe2fb29e2eaea0b5b",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "TransferUnit",
+          "args": {
+            "unitId": "BU-2026-0113",
+            "toOrg": "CityCareOrg"
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792938641076,
+          "nonce": "97d77f67c4cd16ba",
+          "txId": "91b79521bbe4e2356a0a0131e59a2fb187768e7d919be38fe2fb29e2eaea0b5b"
+        },
+        "proposalSignature": "304402206b364a8b482b61bb4f7c1ca8b9a557c667becfe08d95df842bb84cb0205996b802205130c733aadcd02def6818fb1eea61ef738d2da0f43fe729b4065d6e4797299c",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0113": "14:0"
+          },
+          "writes": {
+            "UNIT_BU-2026-0113": {
+              "unitId": "BU-2026-0113",
+              "donorRef": "REF-829480E20204",
+              "bloodGroup": "B+",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1792938635631,
+              "expiryDate": 1795962635631,
+              "collectionCenter": "LifeLine Blood Bank – Andheri Camp",
+              "status": "IN_TRANSIT",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792938639277,
+                "reportRef": "LAB-38378"
+              },
+              "lastAction": "DISPATCHED",
+              "lastUpdated": 1792938641076,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "Dispatched to CityCareOrg",
+              "transferTo": "CityCareOrg"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0113",
+          "toOrg": "CityCareOrg"
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "3045022100b8402445f5135d02ee927879248e423dd566f353dacb7c5ded488dc9f764adfc0220635663096e30b08b7a6dea5a64c2021b58b6081fce9d8b6797e910a8d709cffe"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3044022070e69ddd3a676cd2065d605897b7383fb4e439c1ea48c7d6f031661ff4f0a31f022041b7e10a472d9039d42bdd5ba77aff7d71cb1566db83e4456576766ca983208e"
+          }
+        ],
+        "validationCode": "VALID"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938641082,
+      "txCount": 1,
+      "validationCodes": [
+        "VALID"
+      ]
+    }
+  },
+  {
+    "header": {
+      "number": 16,
+      "previousHash": "53c5badcb2e26e429a7466e3cbb207f1e460fe5625edc46cf288d89bb5a9d78b",
+      "dataHash": "04dd4587dfae1eb1604c42ec300d7b4282fe57257b8dd596a1b5f92bf643425a"
+    },
+    "hash": "bf78c87237b811ae4a12a76c77f43321e2740b1032febfe47a2d450dccd53655",
+    "data": [
+      {
+        "txId": "897373f4c1265b4e7073b25609274588070d7c2c8c90ec20096f887c03ffbd62",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "ReceiveUnit",
+          "args": {
+            "unitId": "BU-2026-0113"
+          },
+          "creator": "CityCareOrg",
+          "timestamp": 1792938642892,
+          "nonce": "89e7794ada904df4",
+          "txId": "897373f4c1265b4e7073b25609274588070d7c2c8c90ec20096f887c03ffbd62"
+        },
+        "proposalSignature": "304402204fa63e5df496904112c818f7a99841dd62a54285c6b348b945d1977bd75486a002207a6baa24ea547bafc4a85c869f514198bd2a4dccb098f14c7b53d0d66dfeab38",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0113": "15:0"
+          },
+          "writes": {
+            "UNIT_BU-2026-0113": {
+              "unitId": "BU-2026-0113",
+              "donorRef": "REF-829480E20204",
+              "bloodGroup": "B+",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1792938635631,
+              "expiryDate": 1795962635631,
+              "collectionCenter": "LifeLine Blood Bank – Andheri Camp",
+              "status": "AT_HOSPITAL",
+              "custodian": "CityCareOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792938639277,
+                "reportRef": "LAB-38378"
+              },
+              "lastAction": "RECEIVED",
+              "lastUpdated": 1792938642892,
+              "lastUpdatedBy": "CityCareOrg",
+              "lastDetails": "Received and stored by CityCareOrg"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0113",
+          "custodian": "CityCareOrg"
+        },
+        "endorsements": [
+          {
+            "mspId": "CityCareMSP",
+            "org": "CityCareOrg",
+            "peer": "peer0.citycare.lifechain.com",
+            "signature": "3046022100c5c34dbc6488798297e5ea5e039b11135d1e10dc19b0a223956d58e3619a3b0c022100be2f83565d5d8403e03beb297e4b9ea6a205bde58d919b1b099d7bbc531a6f85"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3045022100f0458d2dd9982aa83e4fc0ed47396314e3bcc7222b1a43cb51a6d3e3de5e3aee022072ea9d9e1d34c1c825c2e9bfb36e6a15f26dd116da23fa93a1a12a684b9c8868"
+          }
+        ],
+        "validationCode": "VALID"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938642896,
+      "txCount": 1,
+      "validationCodes": [
+        "VALID"
+      ]
+    }
+  },
+  {
+    "header": {
+      "number": 17,
+      "previousHash": "bf78c87237b811ae4a12a76c77f43321e2740b1032febfe47a2d450dccd53655",
+      "dataHash": "37737c2b55c4ee4759fa91a49886385c1fd021879c6185b1d98ce2e908c690ca"
+    },
+    "hash": "373b7ea82186ff56ab709c3ee3dbec52a89f0897a09028ee32a92c6c4e73a9f6",
+    "data": [
+      {
+        "txId": "dd7f30aa2850bd1bd98f3e5aebb259e7d122fdd7da9f3cf0ca9bcb7b97fc68d7",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "TransfuseUnit",
+          "args": {
+            "unitId": "BU-2026-0113",
+            "patientId": "PAT-CC-8120",
+            "patientBloodGroup": "B+"
+          },
+          "creator": "CityCareOrg",
+          "timestamp": 1792938645574,
+          "nonce": "933e851e5f0ef1a1",
+          "txId": "dd7f30aa2850bd1bd98f3e5aebb259e7d122fdd7da9f3cf0ca9bcb7b97fc68d7"
+        },
+        "proposalSignature": "3045022100bb0cfee012da01ceac710202acda923327cf67658793fe7447e066984107d7030220097630d9008bd1bb2b3508fb9e7ea6f1e2e022a69a139702132b9f0338018b8d",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0113": "16:0"
+          },
+          "writes": {
+            "UNIT_BU-2026-0113": {
+              "unitId": "BU-2026-0113",
+              "donorRef": "REF-829480E20204",
+              "bloodGroup": "B+",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1792938635631,
+              "expiryDate": 1795962635631,
+              "collectionCenter": "LifeLine Blood Bank – Andheri Camp",
+              "status": "TRANSFUSED",
+              "custodian": "CityCareOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792938639277,
+                "reportRef": "LAB-38378"
+              },
+              "lastAction": "TRANSFUSED",
+              "lastUpdated": 1792938645574,
+              "lastUpdatedBy": "CityCareOrg",
+              "lastDetails": "Transfused to patient REF-DC8E19EA8FF2 (B+)",
+              "transfusion": {
+                "patientRef": "REF-DC8E19EA8FF2",
+                "patientBloodGroup": "B+",
+                "at": 1792938645574,
+                "hospital": "CityCareOrg"
+              }
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0113",
+          "patientRef": "REF-DC8E19EA8FF2"
+        },
+        "endorsements": [
+          {
+            "mspId": "CityCareMSP",
+            "org": "CityCareOrg",
+            "peer": "peer0.citycare.lifechain.com",
+            "signature": "304502201851e1c2a9559a085315a6cf6d7bfa642bdc675307153dc8ce0f33bf9d3907c9022100d369260bbf6e05ac52a7a85d309d43679e76460952dca990341f29e44d397a89"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "304502206c9954e7106d099a2a3a56803b451f823a7d659ec735c0d7774349e9894f97bc022100e426f0b52adc889dc6891a8cc32bbc1dfa70e9f4c6027b5b7fc0ab6957b63b52"
+          }
+        ],
+        "validationCode": "VALID"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938645579,
+      "txCount": 1,
+      "validationCodes": [
+        "VALID"
+      ]
+    }
+  },
+  {
+    "header": {
+      "number": 18,
+      "previousHash": "373b7ea82186ff56ab709c3ee3dbec52a89f0897a09028ee32a92c6c4e73a9f6",
+      "dataHash": "d7b27d0bc0c31781d5b31d0eba693f265061c9ed1997ff25fb8e16064dac3e11"
+    },
+    "hash": "5643c4369b639324255d264c3d4ea2bd9407873c7ed145e0fa255cbb54fba292",
+    "data": [
+      {
+        "txId": "1f62e10dd0e21838611e59415dc2ce6d2de98efac4dc01f958043d150f50746e",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "TransferUnit",
+          "args": {
+            "unitId": "BU-2026-0106",
+            "toOrg": "CityCareOrg"
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792938654442,
+          "nonce": "83db353af1cebdd6",
+          "txId": "1f62e10dd0e21838611e59415dc2ce6d2de98efac4dc01f958043d150f50746e"
+        },
+        "proposalSignature": "3046022100fb8ebbaefc64396929c7e187699a262e083f41cbe0f8f59dbe429fe5a17b8414022100fba72933366866ad8e84444e3c37ba8b825338441f9324545b8cab01b0570517",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0106": "2:5"
+          },
+          "writes": {
+            "UNIT_BU-2026-0106": {
+              "unitId": "BU-2026-0106",
+              "donorRef": "REF-5A1ECBF9D9B8",
+              "bloodGroup": "A-",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1792333828110,
+              "expiryDate": 1795357828110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "IN_TRANSIT",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792355428110,
+                "reportRef": "LAB-0106"
+              },
+              "lastAction": "DISPATCHED",
+              "lastUpdated": 1792938654442,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "Dispatched to CityCareOrg",
+              "transferTo": "CityCareOrg"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0106",
+          "toOrg": "CityCareOrg"
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "3045022051aeda1821d967df28cb5453e0ecf3f079bf5d8e9585550f1b3aec334fbda966022100b6f68e471012657145a853d32b5b89ee2e55c19af7dec4fd7d0cd08333b3b4fb"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "30460221009b367f064ae157b91d702cd6de0d0c30291faa0a2e37c44330c92fa13f56d6cb022100f3ed00f8cc89e272fabc43e9688d413e2032d05b6f3ac86249b860b8cee594f6"
+          }
+        ],
+        "validationCode": "VALID"
+      },
+      {
+        "txId": "12234f7f759575e446fe0bccb23b337d07e9fd8aca5dc18e4e89f8172ec5501d",
+        "type": "ENDORSER",
+        "proposal": {
+          "channel": "bloodchannel",
+          "chaincode": "bloodtrace",
+          "fn": "TransferUnit",
+          "args": {
+            "unitId": "BU-2026-0106",
+            "toOrg": "GreenValleyOrg"
+          },
+          "creator": "BloodBankOrg",
+          "timestamp": 1792938654446,
+          "nonce": "119f8462114ae3ae",
+          "txId": "12234f7f759575e446fe0bccb23b337d07e9fd8aca5dc18e4e89f8172ec5501d"
+        },
+        "proposalSignature": "304402205f9b1e70cc88dc850472d065dd24d5a133a3b745dbc9d656b83e47c5d9743d8802201ad3ac92669701d86be315ece31282ca68e061b01170913b94c85c83c9f42b39",
+        "rwset": {
+          "reads": {
+            "UNIT_BU-2026-0106": "2:5"
+          },
+          "writes": {
+            "UNIT_BU-2026-0106": {
+              "unitId": "BU-2026-0106",
+              "donorRef": "REF-5A1ECBF9D9B8",
+              "bloodGroup": "A-",
+              "component": "Whole Blood",
+              "volumeMl": 450,
+              "collectedAt": 1792333828110,
+              "expiryDate": 1795357828110,
+              "collectionCenter": "LifeLine Blood Bank",
+              "status": "IN_TRANSIT",
+              "custodian": "BloodBankOrg",
+              "testResult": {
+                "HIV": "NEGATIVE",
+                "HBV": "NEGATIVE",
+                "HCV": "NEGATIVE",
+                "Syphilis": "NEGATIVE",
+                "Malaria": "NEGATIVE",
+                "verdict": "SAFE",
+                "testedBy": "LabOrg",
+                "testedAt": 1792355428110,
+                "reportRef": "LAB-0106"
+              },
+              "lastAction": "DISPATCHED",
+              "lastUpdated": 1792938654446,
+              "lastUpdatedBy": "BloodBankOrg",
+              "lastDetails": "Dispatched to GreenValleyOrg",
+              "transferTo": "GreenValleyOrg"
+            }
+          }
+        },
+        "response": {
+          "unitId": "BU-2026-0106",
+          "toOrg": "GreenValleyOrg"
+        },
+        "endorsements": [
+          {
+            "mspId": "BloodBankMSP",
+            "org": "BloodBankOrg",
+            "peer": "peer0.bloodbank.lifechain.com",
+            "signature": "3044022059e6e0dc7cccdb39fe652f73b52d24d819b02bad506ad093fcfa028714fe448b02207281194a18afa2a5a72dbc61f44d492c6c280e47d57791b0c380855469497f6c"
+          },
+          {
+            "mspId": "RegulatorMSP",
+            "org": "RegulatorOrg",
+            "peer": "peer0.regulator.lifechain.com",
+            "signature": "3046022100ef45019ac5a9902a0069371b17fdce0a9229c29e0b79e7b7e947e78c3720a016022100c28b9d032acccb215d5ab60dc4479b59db81e8952f8842918dc38e66d4148e04"
+          }
+        ],
+        "validationCode": "MVCC_READ_CONFLICT"
+      }
+    ],
+    "metadata": {
+      "orderer": "orderer.lifechain.com",
+      "timestamp": 1792938654450,
+      "txCount": 2,
+      "validationCodes": [
+        "VALID",
+        "MVCC_READ_CONFLICT"
+      ]
+    }
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "name": "lifechain",
+  "version": "1.0.0",
+  "description": "Permissioned blockchain for blood bank traceability (donor to patient)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "seed": "node scripts/seed.js",
+    "reset": "node scripts/reset.js",
+    "test": "node --test test/lifechain.test.js"
+  },
+  "license": "MIT"
+}

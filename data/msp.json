@@ -1,0 +1,57 @@
+{
+  "BloodBankOrg": {
+    "id": "BloodBankOrg",
+    "mspId": "BloodBankMSP",
+    "name": "LifeLine Blood Bank",
+    "type": "Blood Bank",
+    "peer": "peer0.bloodbank.lifechain.com",
+    "ca": "ca.bloodbank.lifechain.com",
+    "certSerial": "D6A152BD3511290A",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEwIFev3xAFYBZsLjlp32ryjCaC+Ti\ntJ0jD+6O0KY2LenJhDflgcF4OGfaUor4Rk5cKklVWt6pShG9Eqvw2Cn5qg==\n-----END PUBLIC KEY-----\n",
+    "privateKey": "-----BEGIN PRIVATE KEY-----\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgUvwAntpWQ0aNotpH\nu8ijZx0iJn5h93Mu0q2LuAAsFuehRANCAATAgV6/fEAVgFmwuOWnfavKMJoL5OK0\nnSMP7o7QpjYt6cmEN+WBwXg4Z9pSivhGTlwqSVVa3qlKEb0Sq/DYKfmq\n-----END PRIVATE KEY-----\n"
+  },
+  "LabOrg": {
+    "id": "LabOrg",
+    "mspId": "LabMSP",
+    "name": "Precision Diagnostics Lab",
+    "type": "Testing Laboratory",
+    "peer": "peer0.lab.lifechain.com",
+    "ca": "ca.lab.lifechain.com",
+    "certSerial": "25090B11E8C44002",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEWwCKnl+LD39jG8OmEE73JzQArUVd\nTiMuwUcgk9Rhcq4r6860b2Sx1JBPDwvRl8QF39IR1MLwK+UJ7tV/L/hjfw==\n-----END PUBLIC KEY-----\n",
+    "privateKey": "-----BEGIN PRIVATE KEY-----\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgXSdwZ2Tl9ByEnEXB\nr/1I3z3CxwOA0HvSb/usTyt/gcihRANCAARbAIqeX4sPf2Mbw6YQTvcnNACtRV1O\nIy7BRyCT1GFyrivrzrRvZLHUkE8PC9GXxAXf0hHUwvAr5Qnu1X8v+GN/\n-----END PRIVATE KEY-----\n"
+  },
+  "CityCareOrg": {
+    "id": "CityCareOrg",
+    "mspId": "CityCareMSP",
+    "name": "CityCare Hospital",
+    "type": "Hospital",
+    "peer": "peer0.citycare.lifechain.com",
+    "ca": "ca.citycare.lifechain.com",
+    "certSerial": "2E27ACE39F548F46",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEDByltxM5Iz8xi39R/nIgCNhFMwf9\nRvhvP1/tJLFojJIV9BbhHxfuOwjY/o2OqxCh0XXdqSVwZMKxVe2qSfzk1Q==\n-----END PUBLIC KEY-----\n",
+    "privateKey": "-----BEGIN PRIVATE KEY-----\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgMWUCXMJTK2w4VlTD\n2brXOJgCENXONFL1spLKrkQkwUihRANCAAQMHKW3EzkjPzGLf1H+ciAI2EUzB/1G\n+G8/X+0ksWiMkhX0FuEfF+47CNj+jY6rEKHRdd2pJXBkwrFV7apJ/OTV\n-----END PRIVATE KEY-----\n"
+  },
+  "GreenValleyOrg": {
+    "id": "GreenValleyOrg",
+    "mspId": "GreenValleyMSP",
+    "name": "Green Valley Hospital",
+    "type": "Hospital",
+    "peer": "peer0.greenvalley.lifechain.com",
+    "ca": "ca.greenvalley.lifechain.com",
+    "certSerial": "D8BDFE485A66BEF0",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEjpToFhlAc9tRtskPXcVJGNXe9Mdh\nQYbBICY0suljBP4wY4O7vNyD02obeVZ6udnztRMPVODlXFBVwzr0aNYS0Q==\n-----END PUBLIC KEY-----\n",
+    "privateKey": "-----BEGIN PRIVATE KEY-----\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgwWw9SBhSGqnFGjB1\nKrsUGDFZHBRDG6aHFf09AP3d6yahRANCAASOlOgWGUBz21G2yQ9dxUkY1d70x2FB\nhsEgJjSy6WME/jBjg7u83IPTaht5Vnq52fO1Ew9U4OVcUFXDOvRo1hLR\n-----END PRIVATE KEY-----\n"
+  },
+  "RegulatorOrg": {
+    "id": "RegulatorOrg",
+    "mspId": "RegulatorMSP",
+    "name": "Health Regulatory Authority",
+    "type": "Regulator / Auditor",
+    "peer": "peer0.regulator.lifechain.com",
+    "ca": "ca.regulator.lifechain.com",
+    "certSerial": "C9524170C594878C",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAERiCYlOVmuhSsI1XE7Jc7eCiFwH2G\noA536j9tDJbAyAVPa8sGiqRMUcVu29OWdFw7UdxkusNuF5u0ranUYnYN4A==\n-----END PUBLIC KEY-----\n",
+    "privateKey": "-----BEGIN PRIVATE KEY-----\nMIGHAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBG0wawIBAQQgjYOEE9z71ltKO8Iw\nymUkA8W675zUJjfSTh2QCX+gSU2hRANCAARGIJiU5Wa6FKwjVcTslzt4KIXAfYag\nDnfqP20MlsDIBU9rywaKpExRxW7b05Z0XDtR3GS6w24Xm7StqdRidg3g\n-----END PRIVATE KEY-----\n"
+  }
+}
